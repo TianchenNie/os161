@@ -1,0 +1,14 @@
+crash, 15, 0
+badcall, 13, 0
+stacktest, 5, 0
+malloctest, 20, 0
+btree, 25, 0
+bigprog, 15, 0
+sty, 10, 0
+forktest, 15, 0
+facts, 5, 0
+hasher, 18, 0
+matmult, 10, 0
+huge, 10, 0
+triplemat, 5, 0
+parallelvm, 9, 0

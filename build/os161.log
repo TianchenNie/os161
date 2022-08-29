@@ -1,0 +1,2799 @@
+=== asst4-01-crash.py ===
+sys161: System/161 release 1.14, compiled Jan 13 2015 13:55:47
+
+OS/161 base system version 1.11a
+Copyright (c) 2000, 2001, 2002, 2003
+   President and Fellows of Harvard College.  All rights reserved.
+
+My really little pony's system version 0 (ASST4 #5)
+
+Cpu is MIPS r2000/r3000
+332k physical memory available
+Device probe...
+lamebus0 (system main bus)
+emu0 at lamebus0
+ltrace0 at lamebus0
+ltimer0 at lamebus0
+hardclock on ltimer0 (100 hz)
+beep0 at ltimer0
+rtclock0 at ltimer0
+lrandom0 at lamebus0
+random0 at lrandom0
+lhd0 at lamebus0
+lhd1 at lamebus0
+lser0 at lamebus0
+con0 at lser0
+pseudorand0 (virtual)
+
+OS/161 kernel [? for menu]: p testbin/os161testerprog 
+p testbin/os161testerprog 
+Welcome to the palindrome tester!
+I will take a large palindrome and test it.
+Here it is:
+amanaplanacaretabanamyriadasumalacaliarahoopapintacatalpaagasanoilabirdayellavatacawapaxawagataxanayaramacapayamagayatsarawallacaralugerawardabinawomanavassalawolfatunaanitapallafretawattabayadaubatanacabadatumagallahatafagazapasayajawalayawetagallopatugatrotatrapatramatorracaperatopatonkatollaballafairasaxaminimatenorabassapasseracapitalarutanamenatedacabalatangasunanassamawasagajamadamasubasaltanaxonasailanadawadiaradianaroomaroodaripatadapariaharevelareelareedapoolaplugapinapeekaparabolaadogapatacudanuafanapalarumanodanetaalaganeelabatikamugamotanapamaximamoodaleekagrubagobageladrabacitadelatotalacedaratapagagaratamanorabaragalacolaapapayawatabarajagabanagapaganabagajarabatawayapapaalocalagarabaronamataragagapataradecalatotaledaticabardalegabogaburgakeeladoomamixamapanatomagumakitabaleenagalaatenadonamuralapanafaunaducatapagodaalobarapakeepanipagulpaloopadeeraleeraleverahairapadatapiradooramooranaidaraidawadanaliasanoxanatlasabusamadamajagasawamassananusagnatalabacadetanemanaturalatipacaressapassabaronetaminimaxasariafallaballotaknotapotarepacarrotamartapartatortagutapollagatewayalawajayasapazagafatahallagamutadabacanatabuadayabattawaterfallapatinaanutaflowalassavanamowanibadrawaregularacallawarastayagamayapacamarayanaxatagawaxapawacatavalleyadribalionasagaaplatacatnipapooharailacalamusadairymanabateracanalpanamaamanaplanacaretabanamyriadasumalacaliarahoopapintacatalpaagasanoilabirdayellavatacawapaxawagataxanayaramacapayamagayatsarawallacaralugerawardabinawomanavassalawolfatunaanitapallafretawattabayadaubatanacabadatumagallahatafagazapasayajawalayawetagallopatugatrotatrapatramatorracaperatopatonkatollaballafairasaxaminimatenorabassapasseracapitalarutanamenatedacabalatangasunanassamawasagajamadamasubasaltanaxonasailanadawadiaradianaroomaroodaripatadapariaharevelareelareedapoolaplugapinapeekaparabolaadogapatacudanuafanapalarumanodanetaalaganeelabatikamugamotanapamaximamoodaleekagrubagobageladrabacitadelatotalacedaratapagagaratamanorabaragalacolaapapayawatabarajagabanagapaganabagajarabatawayapapaalocalagarabaronamataragagapataradecalatotaledaticabardalegabogaburgakeeladoomamixamapanatomagumakitabaleenagalaatenadonamuralapanafaunaducatapagodaalobarapakeepanipagulpaloopadeeraleeraleverahairapadatapiradooramooranaidaraidawadanaliasanoxanatlasabusamadamajagasawamassananusagnatalabacadetanemanaturalatipacaressapassabaronetaminimaxasariafallaballotaknotapotarepacarrotamartapartatortagutapollagatewayalawajayasapazagafatahallagamutadabacanatabuadayabattawaterfallapatinaanutaflowalassavanamowanibadrawaregularacallawarastayagamayapacamarayanaxatagawaxapawacatavalleyadribalionasagaaplatacatnipapooharailacalamusadairymanabateracanalpanamaamanaplanacaretabanamyriadasumalacaliarahoopapintacatalpaagasanoilabirdayellavatacawapaxawagataxanayaramacapayamagayatsarawallacaralugerawardabinawomanavassalawolfatunaanitapallafretawattabayadaubatanacabadatumagallahatafagazapasayajawalayawetagallopatugatrotatrapatramatorracaperatopatonkatollaballafairasaxaminimatenorabassapasseracapitalarutanamenatedacabalatangasunanassamawasagajamadamasubasaltanaxonasailanadawadiaradianaroomaroodaripatadapariaharevelareelareedapoolaplugapinapeekaparabolaadogapatacudanuafanapalarumanodanetaalaganeelabatikamugamotanapamaximamoodaleekagrubagobageladrabacitadelatotalacedaratapagagaratamanorabaragalacolaapapayawatabarajagabanagapaganabagajarabatawayapapaalocalagarabaronamataragagapataradecalatotaledaticabardalegabogaburgakeeladoomamixamapanatomagumakitabaleenagalaatenadonamuralapanafaunaducatapagodaalobarapakeepanipagulpaloopadeeraleeraleverahairapadatapiradooramooranaidaraidawadanaliasanoxanatlasabusamadamajagasawamassananusagnatalabacadetanemanaturalatipacaressapassabaronetaminimaxasariafallaballotaknotapotarepacarrotamartapartatortagutapollagatewayalawajayasapazagafatahallagamutadabacanatabuadayabattawaterfallapatinaanutaflowalassavanamowanibadrawaregularacallawarastayagamayapacamarayanaxatagawaxapawacatavalleyadribalionasagaaplatacatnipapooharailacalamusadairymanabateracanalpanamaamanaplanacaretabanamyriadasumalacaliarahoopapintacatalpaagasanoilabirdayellavatacawapaxawagataxanayaramacapayamagayatsarawallacaralugerawardabinawomanavassalawolfatunaanitapallafretawattabayadaubatanacabadatumagallahatafagazapasayajawalayawetagallopatugatrotatrapatramatorracaperatopatonkatollaballafairasaxaminimatenorabassapasseracapitalarutanamenatedacabalatangasunanassamawasagajamadamasubasaltanaxonasailanadawadiaradianaroomaroodaripatadapariaharevelareelareedapoolaplugapinapeekaparabolaadogapatacudanuafanapalarumanodanetaalaganeelabatikamugamotanapamaximamoodaleekagrubagobageladrabacitadelatotalacedaratapagagaratamanorabaragalacolaapapayawatabarajagabanagapaganabagajarabatawayapapaalocalagarabaronamataragagapataradecalatotaledaticabardalegabogaburgakeeladoomamixamapanatomagumakitabaleenagalaatenadonamuralapanafaunaducatapagodaalobarapakeepanipagulpaloopadeeraleeraleverahairapadatapiradooramooranaidaraidawadanaliasanoxanatlasabusamadamajagasawamassananusagnatalabacadetanemanaturalatipacaressapassabaronetaminimaxasariafallaballotaknotapotarepacarrotamartapartatortagutapollagatewayalawajayasapazagafatahallagamutadabacanatabuadayabattawaterfallapatinaanutaflowalassavanamowanibadrawaregularacallawarastayagamayapacamarayanaxatagawaxapawacatavalleyadribalionasagaaplatacatnipapooharailacalamusadairymanabateracanalpanama
+Testing.....................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................IS a palindrome
+Operation took 1.294657560 seconds
+OS/161 kernel [? for menu]: p testbin/os161testerprog 
+p testbin/os161testerprog 
+Welcome to the palindrome tester!
+I will take a large palindrome and test it.
+Here it is:
+amanaplanacaretabanamyriadasumalacaliarahoopapintacatalpaagasanoilabirdayellavatacawapaxawagataxanayaramacapayamagayatsarawallacaralugerawardabinawomanavassalawolfatunaanitapallafretawattabayadaubatanacabadatumagallahatafagazapasayajawalayawetagallopatugatrotatrapatramatorracaperatopatonkatollaballafairasaxaminimatenorabassapasseracapitalarutanamenatedacabalatangasunanassamawasagajamadamasubasaltanaxonasailanadawadiaradianaroomaroodaripatadapariaharevelareelareedapoolaplugapinapeekaparabolaadogapatacudanuafanapalarumanodanetaalaganeelabatikamugamotanapamaximamoodaleekagrubagobageladrabacitadelatotalacedaratapagagaratamanorabaragalacolaapapayawatabarajagabanagapaganabagajarabatawayapapaalocalagarabaronamataragagapataradecalatotaledaticabardalegabogaburgakeeladoomamixamapanatomagumakitabaleenagalaatenadonamuralapanafaunaducatapagodaalobarapakeepanipagulpaloopadeeraleeraleverahairapadatapiradooramooranaidaraidawadanaliasanoxanatlasabusamadamajagasawamassananusagnatalabacadetanemanaturalatipacaressapassabaronetaminimaxasariafallaballotaknotapotarepacarrotamartapartatortagutapollagatewayalawajayasapazagafatahallagamutadabacanatabuadayabattawaterfallapatinaanutaflowalassavanamowanibadrawaregularacallawarastayagamayapacamarayanaxatagawaxapawacatavalleyadribalionasagaaplatacatnipapooharailacalamusadairymanabateracanalpanamaamanaplanacaretabanamyriadasumalacaliarahoopapintacatalpaagasanoilabirdayellavatacawapaxawagataxanayaramacapayamagayatsarawallacaralugerawardabinawomanavassalawolfatunaanitapallafretawattabayadaubatanacabadatumagallahatafagazapasayajawalayawetagallopatugatrotatrapatramatorracaperatopatonkatollaballafairasaxaminimatenorabassapasseracapitalarutanamenatedacabalatangasunanassamawasagajamadamasubasaltanaxonasailanadawadiaradianaroomaroodaripatadapariaharevelareelareedapoolaplugapinapeekaparabolaadogapatacudanuafanapalarumanodanetaalaganeelabatikamugamotanapamaximamoodaleekagrubagobageladrabacitadelatotalacedaratapagagaratamanorabaragalacolaapapayawatabarajagabanagapaganabagajarabatawayapapaalocalagarabaronamataragagapataradecalatotaledaticabardalegabogaburgakeeladoomamixamapanatomagumakitabaleenagalaatenadonamuralapanafaunaducatapagodaalobarapakeepanipagulpaloopadeeraleeraleverahairapadatapiradooramooranaidaraidawadanaliasanoxanatlasabusamadamajagasawamassananusagnatalabacadetanemanaturalatipacaressapassabaronetaminimaxasariafallaballotaknotapotarepacarrotamartapartatortagutapollagatewayalawajayasapazagafatahallagamutadabacanatabuadayabattawaterfallapatinaanutaflowalassavanamowanibadrawaregularacallawarastayagamayapacamarayanaxatagawaxapawacatavalleyadribalionasagaaplatacatnipapooharailacalamusadairymanabateracanalpanamaamanaplanacaretabanamyriadasumalacaliarahoopapintacatalpaagasanoilabirdayellavatacawapaxawagataxanayaramacapayamagayatsarawallacaralugerawardabinawomanavassalawolfatunaanitapallafretawattabayadaubatanacabadatumagallahatafagazapasayajawalayawetagallopatugatrotatrapatramatorracaperatopatonkatollaballafairasaxaminimatenorabassapasseracapitalarutanamenatedacabalatangasunanassamawasagajamadamasubasaltanaxonasailanadawadiaradianaroomaroodaripatadapariaharevelareelareedapoolaplugapinapeekaparabolaadogapatacudanuafanapalarumanodanetaalaganeelabatikamugamotanapamaximamoodaleekagrubagobageladrabacitadelatotalacedaratapagagaratamanorabaragalacolaapapayawatabarajagabanagapaganabagajarabatawayapapaalocalagarabaronamataragagapataradecalatotaledaticabardalegabogaburgakeeladoomamixamapanatomagumakitabaleenagalaatenadonamuralapanafaunaducatapagodaalobarapakeepanipagulpaloopadeeraleeraleverahairapadatapiradooramooranaidaraidawadanaliasanoxanatlasabusamadamajagasawamassananusagnatalabacadetanemanaturalatipacaressapassabaronetaminimaxasariafallaballotaknotapotarepacarrotamartapartatortagutapollagatewayalawajayasapazagafatahallagamutadabacanatabuadayabattawaterfallapatinaanutaflowalassavanamowanibadrawaregularacallawarastayagamayapacamarayanaxatagawaxapawacatavalleyadribalionasagaaplatacatnipapooharailacalamusadairymanabateracanalpanamaamanaplanacaretabanamyriadasumalacaliarahoopapintacatalpaagasanoilabirdayellavatacawapaxawagataxanayaramacapayamagayatsarawallacaralugerawardabinawomanavassalawolfatunaanitapallafretawattabayadaubatanacabadatumagallahatafagazapasayajawalayawetagallopatugatrotatrapatramatorracaperatopatonkatollaballafairasaxaminimatenorabassapasseracapitalarutanamenatedacabalatangasunanassamawasagajamadamasubasaltanaxonasailanadawadiaradianaroomaroodaripatadapariaharevelareelareedapoolaplugapinapeekaparabolaadogapatacudanuafanapalarumanodanetaalaganeelabatikamugamotanapamaximamoodaleekagrubagobageladrabacitadelatotalacedaratapagagaratamanorabaragalacolaapapayawatabarajagabanagapaganabagajarabatawayapapaalocalagarabaronamataragagapataradecalatotaledaticabardalegabogaburgakeeladoomamixamapanatomagumakitabaleenagalaatenadonamuralapanafaunaducatapagodaalobarapakeepanipagulpaloopadeeraleeraleverahairapadatapiradooramooranaidaraidawadanaliasanoxanatlasabusamadamajagasawamassananusagnatalabacadetanemanaturalatipacaressapassabaronetaminimaxasariafallaballotaknotapotarepacarrotamartapartatortagutapollagatewayalawajayasapazagafatahallagamutadabacanatabuadayabattawaterfallapatinaanutaflowalassavanamowanibadrawaregularacallawarastayagamayapacamarayanaxatagawaxapawacatavalleyadribalionasagaaplatacatnipapooharailacalamusadairymanabateracanalpanama
+Testing.....................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................IS a palindrome
+Operation took 1.294989880 seconds
+OS/161 kernel [? for menu]: p testbin/os161testerprog 
+p testbin/os161testerprog 
+Welcome to the palindrome tester!
+I will take a large palindrome and test it.
+Here it is:
+amanaplanacaretabanamyriadasumalacaliarahoopapintacatalpaagasanoilabirdayellavatacawapaxawagataxanayaramacapayamagayatsarawallacaralugerawardabinawomanavassalawolfatunaanitapallafretawattabayadaubatanacabadatumagallahatafagazapasayajawalayawetagallopatugatrotatrapatramatorracaperatopatonkatollaballafairasaxaminimatenorabassapasseracapitalarutanamenatedacabalatangasunanassamawasagajamadamasubasaltanaxonasailanadawadiaradianaroomaroodaripatadapariaharevelareelareedapoolaplugapinapeekaparabolaadogapatacudanuafanapalarumanodanetaalaganeelabatikamugamotanapamaximamoodaleekagrubagobageladrabacitadelatotalacedaratapagagaratamanorabaragalacolaapapayawatabarajagabanagapaganabagajarabatawayapapaalocalagarabaronamataragagapataradecalatotaledaticabardalegabogaburgakeeladoomamixamapanatomagumakitabaleenagalaatenadonamuralapanafaunaducatapagodaalobarapakeepanipagulpaloopadeeraleeraleverahairapadatapiradooramooranaidaraidawadanaliasanoxanatlasabusamadamajagasawamassananusagnatalabacadetanemanaturalatipacaressapassabaronetaminimaxasariafallaballotaknotapotarepacarrotamartapartatortagutapollagatewayalawajayasapazagafatahallagamutadabacanatabuadayabattawaterfallapatinaanutaflowalassavanamowanibadrawaregularacallawarastayagamayapacamarayanaxatagawaxapawacatavalleyadribalionasagaaplatacatnipapooharailacalamusadairymanabateracanalpanamaamanaplanacaretabanamyriadasumalacaliarahoopapintacatalpaagasanoilabirdayellavatacawapaxawagataxanayaramacapayamagayatsarawallacaralugerawardabinawomanavassalawolfatunaanitapallafretawattabayadaubatanacabadatumagallahatafagazapasayajawalayawetagallopatugatrotatrapatramatorracaperatopatonkatollaballafairasaxaminimatenorabassapasseracapitalarutanamenatedacabalatangasunanassamawasagajamadamasubasaltanaxonasailanadawadiaradianaroomaroodaripatadapariaharevelareelareedapoolaplugapinapeekaparabolaadogapatacudanuafanapalarumanodanetaalaganeelabatikamugamotanapamaximamoodaleekagrubagobageladrabacitadelatotalacedaratapagagaratamanorabaragalacolaapapayawatabarajagabanagapaganabagajarabatawayapapaalocalagarabaronamataragagapataradecalatotaledaticabardalegabogaburgakeeladoomamixamapanatomagumakitabaleenagalaatenadonamuralapanafaunaducatapagodaalobarapakeepanipagulpaloopadeeraleeraleverahairapadatapiradooramooranaidaraidawadanaliasanoxanatlasabusamadamajagasawamassananusagnatalabacadetanemanaturalatipacaressapassabaronetaminimaxasariafallaballotaknotapotarepacarrotamartapartatortagutapollagatewayalawajayasapazagafatahallagamutadabacanatabuadayabattawaterfallapatinaanutaflowalassavanamowanibadrawaregularacallawarastayagamayapacamarayanaxatagawaxapawacatavalleyadribalionasagaaplatacatnipapooharailacalamusadairymanabateracanalpanamaamanaplanacaretabanamyriadasumalacaliarahoopapintacatalpaagasanoilabirdayellavatacawapaxawagataxanayaramacapayamagayatsarawallacaralugerawardabinawomanavassalawolfatunaanitapallafretawattabayadaubatanacabadatumagallahatafagazapasayajawalayawetagallopatugatrotatrapatramatorracaperatopatonkatollaballafairasaxaminimatenorabassapasseracapitalarutanamenatedacabalatangasunanassamawasagajamadamasubasaltanaxonasailanadawadiaradianaroomaroodaripatadapariaharevelareelareedapoolaplugapinapeekaparabolaadogapatacudanuafanapalarumanodanetaalaganeelabatikamugamotanapamaximamoodaleekagrubagobageladrabacitadelatotalacedaratapagagaratamanorabaragalacolaapapayawatabarajagabanagapaganabagajarabatawayapapaalocalagarabaronamataragagapataradecalatotaledaticabardalegabogaburgakeeladoomamixamapanatomagumakitabaleenagalaatenadonamuralapanafaunaducatapagodaalobarapakeepanipagulpaloopadeeraleeraleverahairapadatapiradooramooranaidaraidawadanaliasanoxanatlasabusamadamajagasawamassananusagnatalabacadetanemanaturalatipacaressapassabaronetaminimaxasariafallaballotaknotapotarepacarrotamartapartatortagutapollagatewayalawajayasapazagafatahallagamutadabacanatabuadayabattawaterfallapatinaanutaflowalassavanamowanibadrawaregularacallawarastayagamayapacamarayanaxatagawaxapawacatavalleyadribalionasagaaplatacatnipapooharailacalamusadairymanabateracanalpanamaamanaplanacaretabanamyriadasumalacaliarahoopapintacatalpaagasanoilabirdayellavatacawapaxawagataxanayaramacapayamagayatsarawallacaralugerawardabinawomanavassalawolfatunaanitapallafretawattabayadaubatanacabadatumagallahatafagazapasayajawalayawetagallopatugatrotatrapatramatorracaperatopatonkatollaballafairasaxaminimatenorabassapasseracapitalarutanamenatedacabalatangasunanassamawasagajamadamasubasaltanaxonasailanadawadiaradianaroomaroodaripatadapariaharevelareelareedapoolaplugapinapeekaparabolaadogapatacudanuafanapalarumanodanetaalaganeelabatikamugamotanapamaximamoodaleekagrubagobageladrabacitadelatotalacedaratapagagaratamanorabaragalacolaapapayawatabarajagabanagapaganabagajarabatawayapapaalocalagarabaronamataragagapataradecalatotaledaticabardalegabogaburgakeeladoomamixamapanatomagumakitabaleenagalaatenadonamuralapanafaunaducatapagodaalobarapakeepanipagulpaloopadeeraleeraleverahairapadatapiradooramooranaidaraidawadanaliasanoxanatlasabusamadamajagasawamassananusagnatalabacadetanemanaturalatipacaressapassabaronetaminimaxasariafallaballotaknotapotarepacarrotamartapartatortagutapollagatewayalawajayasapazagafatahallagamutadabacanatabuadayabattawaterfallapatinaanutaflowalassavanamowanibadrawaregularacallawarastayagamayapacamarayanaxatagawaxapawacatavalleyadribalionasagaaplatacatnipapooharailacalamusadairymanabateracanalpanama
+Testing.....................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................IS a palindrome
+Operation took 1.294868680 seconds
+OS/161 kernel [? for menu]:p testbin/os161testerprog 
+ p testbin/os161testerprog 
+Welcome to the palindrome tester!
+I will take a large palindrome and test it.
+Here it is:
+amanaplanacaretabanamyriadasumalacaliarahoopapintacatalpaagasanoilabirdayellavatacawapaxawagataxanayaramacapayamagayatsarawallacaralugerawardabinawomanavassalawolfatunaanitapallafretawattabayadaubatanacabadatumagallahatafagazapasayajawalayawetagallopatugatrotatrapatramatorracaperatopatonkatollaballafairasaxaminimatenorabassapasseracapitalarutanamenatedacabalatangasunanassamawasagajamadamasubasaltanaxonasailanadawadiaradianaroomaroodaripatadapariaharevelareelareedapoolaplugapinapeekaparabolaadogapatacudanuafanapalarumanodanetaalaganeelabatikamugamotanapamaximamoodaleekagrubagobageladrabacitadelatotalacedaratapagagaratamanorabaragalacolaapapayawatabarajagabanagapaganabagajarabatawayapapaalocalagarabaronamataragagapataradecalatotaledaticabardalegabogaburgakeeladoomamixamapanatomagumakitabaleenagalaatenadonamuralapanafaunaducatapagodaalobarapakeepanipagulpaloopadeeraleeraleverahairapadatapiradooramooranaidaraidawadanaliasanoxanatlasabusamadamajagasawamassananusagnatalabacadetanemanaturalatipacaressapassabaronetaminimaxasariafallaballotaknotapotarepacarrotamartapartatortagutapollagatewayalawajayasapazagafatahallagamutadabacanatabuadayabattawaterfallapatinaanutaflowalassavanamowanibadrawaregularacallawarastayagamayapacamarayanaxatagawaxapawacatavalleyadribalionasagaaplatacatnipapooharailacalamusadairymanabateracanalpanamaamanaplanacaretabanamyriadasumalacaliarahoopapintacatalpaagasanoilabirdayellavatacawapaxawagataxanayaramacapayamagayatsarawallacaralugerawardabinawomanavassalawolfatunaanitapallafretawattabayadaubatanacabadatumagallahatafagazapasayajawalayawetagallopatugatrotatrapatramatorracaperatopatonkatollaballafairasaxaminimatenorabassapasseracapitalarutanamenatedacabalatangasunanassamawasagajamadamasubasaltanaxonasailanadawadiaradianaroomaroodaripatadapariaharevelareelareedapoolaplugapinapeekaparabolaadogapatacudanuafanapalarumanodanetaalaganeelabatikamugamotanapamaximamoodaleekagrubagobageladrabacitadelatotalacedaratapagagaratamanorabaragalacolaapapayawatabarajagabanagapaganabagajarabatawayapapaalocalagarabaronamataragagapataradecalatotaledaticabardalegabogaburgakeeladoomamixamapanatomagumakitabaleenagalaatenadonamuralapanafaunaducatapagodaalobarapakeepanipagulpaloopadeeraleeraleverahairapadatapiradooramooranaidaraidawadanaliasanoxanatlasabusamadamajagasawamassananusagnatalabacadetanemanaturalatipacaressapassabaronetaminimaxasariafallaballotaknotapotarepacarrotamartapartatortagutapollagatewayalawajayasapazagafatahallagamutadabacanatabuadayabattawaterfallapatinaanutaflowalassavanamowanibadrawaregularacallawarastayagamayapacamarayanaxatagawaxapawacatavalleyadribalionasagaaplatacatnipapooharailacalamusadairymanabateracanalpanamaamanaplanacaretabanamyriadasumalacaliarahoopapintacatalpaagasanoilabirdayellavatacawapaxawagataxanayaramacapayamagayatsarawallacaralugerawardabinawomanavassalawolfatunaanitapallafretawattabayadaubatanacabadatumagallahatafagazapasayajawalayawetagallopatugatrotatrapatramatorracaperatopatonkatollaballafairasaxaminimatenorabassapasseracapitalarutanamenatedacabalatangasunanassamawasagajamadamasubasaltanaxonasailanadawadiaradianaroomaroodaripatadapariaharevelareelareedapoolaplugapinapeekaparabolaadogapatacudanuafanapalarumanodanetaalaganeelabatikamugamotanapamaximamoodaleekagrubagobageladrabacitadelatotalacedaratapagagaratamanorabaragalacolaapapayawatabarajagabanagapaganabagajarabatawayapapaalocalagarabaronamataragagapataradecalatotaledaticabardalegabogaburgakeeladoomamixamapanatomagumakitabaleenagalaatenadonamuralapanafaunaducatapagodaalobarapakeepanipagulpaloopadeeraleeraleverahairapadatapiradooramooranaidaraidawadanaliasanoxanatlasabusamadamajagasawamassananusagnatalabacadetanemanaturalatipacaressapassabaronetaminimaxasariafallaballotaknotapotarepacarrotamartapartatortagutapollagatewayalawajayasapazagafatahallagamutadabacanatabuadayabattawaterfallapatinaanutaflowalassavanamowanibadrawaregularacallawarastayagamayapacamarayanaxatagawaxapawacatavalleyadribalionasagaaplatacatnipapooharailacalamusadairymanabateracanalpanamaamanaplanacaretabanamyriadasumalacaliarahoopapintacatalpaagasanoilabirdayellavatacawapaxawagataxanayaramacapayamagayatsarawallacaralugerawardabinawomanavassalawolfatunaanitapallafretawattabayadaubatanacabadatumagallahatafagazapasayajawalayawetagallopatugatrotatrapatramatorracaperatopatonkatollaballafairasaxaminimatenorabassapasseracapitalarutanamenatedacabalatangasunanassamawasagajamadamasubasaltanaxonasailanadawadiaradianaroomaroodaripatadapariaharevelareelareedapoolaplugapinapeekaparabolaadogapatacudanuafanapalarumanodanetaalaganeelabatikamugamotanapamaximamoodaleekagrubagobageladrabacitadelatotalacedaratapagagaratamanorabaragalacolaapapayawatabarajagabanagapaganabagajarabatawayapapaalocalagarabaronamataragagapataradecalatotaledaticabardalegabogaburgakeeladoomamixamapanatomagumakitabaleenagalaatenadonamuralapanafaunaducatapagodaalobarapakeepanipagulpaloopadeeraleeraleverahairapadatapiradooramooranaidaraidawadanaliasanoxanatlasabusamadamajagasawamassananusagnatalabacadetanemanaturalatipacaressapassabaronetaminimaxasariafallaballotaknotapotarepacarrotamartapartatortagutapollagatewayalawajayasapazagafatahallagamutadabacanatabuadayabattawaterfallapatinaanutaflowalassavanamowanibadrawaregularacallawarastayagamayapacamarayanaxatagawaxapawacatavalleyadribalionasagaaplatacatnipapooharailacalamusadairymanabateracanalpanama
+Testing.....................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................IS a palindrome
+Operation took 1.294880520 seconds
+OS/161 kernel [? for menu]:p testbin/os161testerprog 
+ p testbin/os161testerprog 
+Running program testbin/os161testerprog failed: Out of memory
+Operation took 0.044591360 seconds
+OS/161 kernel [? for menu]: p testbin/os161testerprog 
+p testbin/os161testerprog 
+Running program testbin/os161testerprog failed: Out of memory
+Operation took 0.044612840 seconds
+OS/161 kernel [? for menu]: p testbin/os161testerprog 
+p testbin/os161testerprog 
+Running program testbin/os161testerprog failed: Out of memory
+Operation took 0.044724640 seconds
+OS/161 kernel [? for menu]: p testbin/os161testerprog 
+p testbin/os161testerprog 
+Running program testbin/os161testerprog failed: Out of memory
+Operation took 0.044636000 seconds
+OS/161 kernel [? for menu]: p testbin/os161testerprog 
+p testbin/os161testerprog 
+Running program testbin/os161testerprog failed: Out of memory
+Operation took 0.044772120 seconds
+OS/161 kernel [? for menu]: p testbin/os161testerprog 
+p testbin/os161testerprog 
+thread_fork failed: Out of memory
+Operation took 0.004215640 seconds
+Menu command failed: Out of memory
+OS/161 kernel [? for menu]: p testbin/os161testerprog 
+p testbin/os161testerprog 
+thread_fork failed: Out of memory
+Operation took 0.004215200 seconds
+Menu command failed: Out of memory
+OS/161 kernel [? for menu]: p testbin/os161testerprog 
+p testbin/os161testerprog 
+thread_fork failed: Out of memory
+Operation took 0.004215440 seconds
+Menu command failed: Out of memory
+OS/161 kernel [? for menu]: p testbin/os161testerprog 
+p testbin/os161testerprog 
+thread_fork failed: Out of memory
+Operation took 0.004215640 seconds
+Menu command failed: Out of memory
+OS/161 kernel [? for menu]:p testbin/os161testerprog 
+ p testbin/os161testerprog 
+thread_fork failed: Out of memory
+Operation took 0.004214800 seconds
+Menu command failed: Out of memory
+OS/161 kernel [? for menu]:p testbin/os161testerprog 
+ p testbin/os161testerprog 
+thread_fork failed: Out of memory
+Operation took 0.004215360 seconds
+Menu command failed: Out of memory
+OS/161 kernel [? for menu]: p testbin/os161testerprog 
+p testbin/os161testerprog 
+thread_fork failed: Out of memory
+Operation took 0.004215560 seconds
+Menu command failed: Out of memory
+OS/161 kernel [? for menu]: p testbin/os161testerprog 
+p testbin/os161testerprog 
+thread_fork failed: Out of memory
+Operation took 0.004215160 seconds
+Menu command failed: Out of memory
+OS/161 kernel [? for menu]: p testbin/os161testerprog 
+p testbin/os161testerprog 
+thread_fork failed: Out of memory
+Operation took 0.004215200 seconds
+
+=== asst4-01-crash.py ===
+=== asst4-02-badcall.py ===
+sys161: System/161 release 1.14, compiled Jan 13 2015 13:55:47
+
+OS/161 base system version 1.11a
+Copyright (c) 2000, 2001, 2002, 2003
+   President and Fellows of Harvard College.  All rights reserved.
+
+My really little pony's system version 0 (ASST4 #5)
+
+Cpu is MIPS r2000/r3000
+332k physical memory available
+Device probe...
+lamebus0 (system main bus)
+emu0 at lamebus0
+ltrace0 at lamebus0
+ltimer0 at lamebus0
+hardclock on ltimer0 (100 hz)
+beep0 at ltimer0
+rtclock0 at ltimer0
+lrandom0 at lamebus0
+random0 at lrandom0
+lhd0 at lamebus0
+lhd1 at lamebus0
+lser0 at lamebus0
+con0 at lser0
+pseudorand0 (virtual)
+
+OS/161 kernel [? for menu]:p testbin/os161testerprog 
+ p testbin/os161testerprog 
+[a-|, 0-4, *, ?=menu, !=quit]
+[a] reboot                  [b] execv                   
+[c] waitpid                 [d] sbrk                    
+[e] __time                  [f] fsync                   
+[g] ftruncate               [h] fstat                   
+[i] remove                  [j] rename                  
+[k] link                    [l] mkdir                   
+[m] rmdir                   [n] chdir                   
+[o] getdirentry             [p] read                    
+[q] write                   [r] open                    
+[s] lseek                   [t] stat                    
+[u] lstat                   [v] close                   
+[w] ioctl                   [x] symlink                 
+[y] readlink                [z] dup2                    
+[{] __getcwd                [|] pipe                    
+[0] asst0                   [2] asst2                   
+[3] asst3                   [4] asst4                   
+[*] all                     [!] quit                    
+Choose: dd
+Unknown syscall 10
+(program name unknown): FAILURE: sbrk(too-large negative): wrong error: No such system call
+Unknown syscall 10
+(program name unknown): FAILURE: sbrk(huge positive): wrong error: No such system call
+Unknown syscall 10
+(program name unknown): FAILURE: sbrk(huge negative): wrong error: No such system call
+Unknown syscall 10
+(program name unknown): FAILURE: sbrk(unaligned positive): wrong error: No such system call
+Unknown syscall 10
+(program name unknown): FAILURE: sbrk(unaligned negative): wrong error: No such system call
+Choose:c c
+(program name unknown): passed: wait for pid -8
+(program name unknown): passed: wait for pid -1
+(program name unknown): passed: pid zero
+(program name unknown): passed: nonexistent pid
+(program name unknown): passed: wait with NULL status
+(program name unknown): passed: wait with invalid pointer status
+sleep: Dropping thread <boot/menu>
+sleep: Dropping thread testbin/os161testerprog
+panic: Assertion failed: (as->as_vbase1 & PAGE_FRAME) == as->as_vbase1, at ../../vm/addrspace.c:108 (vm_fault)
+sys161: 48881008 cycles (11920328k, 144947u, 36815733i)
+sys161: 2658 irqs 1716 exns 0r/0w disk 29r/2660w console 10r/0w/3m emufs 0r/0w net
+sys161: Elapsed real time: 1.944642 seconds (25.1363 mhz)
+sys161: Elapsed virtual time: 1.955240320 seconds (25 mhz)
+
+=== asst4-02-badcall.py ===
+=== asst4-03-stacktest.py ===
+sys161: System/161 release 1.14, compiled Jan 13 2015 13:55:47
+
+OS/161 base system version 1.11a
+Copyright (c) 2000, 2001, 2002, 2003
+   President and Fellows of Harvard College.  All rights reserved.
+
+My really little pony's system version 0 (ASST4 #5)
+
+Cpu is MIPS r2000/r3000
+332k physical memory available
+Device probe...
+lamebus0 (system main bus)
+emu0 at lamebus0
+ltrace0 at lamebus0
+ltimer0 at lamebus0
+hardclock on ltimer0 (100 hz)
+beep0 at ltimer0
+rtclock0 at ltimer0
+lrandom0 at lamebus0
+random0 at lrandom0
+lhd0 at lamebus0
+lhd1 at lamebus0
+lser0 at lamebus0
+con0 at lser0
+pseudorand0 (virtual)
+
+OS/161 kernel [? for menu]: p testbin/os161testerprog 
+p testbin/os161testerprog 
+n = 4000
+calling foo: n-i = 0, &i = 0x7fffffd8
+calling foo: n-i = 1, &i = 0x7fffffc0
+calling foo: n-i = 2, &i = 0x7fffffa8
+calling foo: n-i = 3, &i = 0x7fffff90
+calling foo: n-i = 4, &i = 0x7fffff78
+calling foo: n-i = 5, &i = 0x7fffff60
+calling foo: n-i = 6, &i = 0x7fffff48
+calling foo: n-i = 7, &i = 0x7fffff30
+calling foo: n-i = 8, &i = 0x7fffff18
+calling foo: n-i = 9, &i = 0x7fffff00
+calling foo: n-i = 10, &i = 0x7ffffee8
+calling foo: n-i = 11, &i = 0x7ffffed0
+calling foo: n-i = 12, &i = 0x7ffffeb8
+calling foo: n-i = 13, &i = 0x7ffffea0
+calling foo: n-i = 14, &i = 0x7ffffe88
+calling foo: n-i = 15, &i = 0x7ffffe70
+calling foo: n-i = 16, &i = 0x7ffffe58
+calling foo: n-i = 17, &i = 0x7ffffe40
+calling foo: n-i = 18, &i = 0x7ffffe28
+calling foo: n-i = 19, &i = 0x7ffffe10
+calling foo: n-i = 20, &i = 0x7ffffdf8
+calling foo: n-i = 21, &i = 0x7ffffde0
+calling foo: n-i = 22, &i = 0x7ffffdc8
+calling foo: n-i = 23, &i = 0x7ffffdb0
+calling foo: n-i = 24, &i = 0x7ffffd98
+calling foo: n-i = 25, &i = 0x7ffffd80
+calling foo: n-i = 26, &i = 0x7ffffd68
+calling foo: n-i = 27, &i = 0x7ffffd50
+calling foo: n-i = 28, &i = 0x7ffffd38
+calling foo: n-i = 29, &i = 0x7ffffd20
+calling foo: n-i = 30, &i = 0x7ffffd08
+calling foo: n-i = 31, &i = 0x7ffffcf0
+calling foo: n-i = 32, &i = 0x7ffffcd8
+calling foo: n-i = 33, &i = 0x7ffffcc0
+calling foo: n-i = 34, &i = 0x7ffffca8
+calling foo: n-i = 35, &i = 0x7ffffc90
+calling foo: n-i = 36, &i = 0x7ffffc78
+calling foo: n-i = 37, &i = 0x7ffffc60
+calling foo: n-i = 38, &i = 0x7ffffc48
+calling foo: n-i = 39, &i = 0x7ffffc30
+calling foo: n-i = 40, &i = 0x7ffffc18
+calling foo: n-i = 41, &i = 0x7ffffc00
+calling foo: n-i = 42, &i = 0x7ffffbe8
+calling foo: n-i = 43, &i = 0x7ffffbd0
+calling foo: n-i = 44, &i = 0x7ffffbb8
+calling foo: n-i = 45, &i = 0x7ffffba0
+calling foo: n-i = 46, &i = 0x7ffffb88
+calling foo: n-i = 47, &i = 0x7ffffb70
+calling foo: n-i = 48, &i = 0x7ffffb58
+calling foo: n-i = 49, &i = 0x7ffffb40
+calling foo: n-i = 50, &i = 0x7ffffb28
+calling foo: n-i = 51, &i = 0x7ffffb10
+calling foo: n-i = 52, &i = 0x7ffffaf8
+calling foo: n-i = 53, &i = 0x7ffffae0
+calling foo: n-i = 54, &i = 0x7ffffac8
+calling foo: n-i = 55, &i = 0x7ffffab0
+calling foo: n-i = 56, &i = 0x7ffffa98
+calling foo: n-i = 57, &i = 0x7ffffa80
+calling foo: n-i = 58, &i = 0x7ffffa68
+calling foo: n-i = 59, &i = 0x7ffffa50
+calling foo: n-i = 60, &i = 0x7ffffa38
+calling foo: n-i = 61, &i = 0x7ffffa20
+calling foo: n-i = 62, &i = 0x7ffffa08
+calling foo: n-i = 63, &i = 0x7ffff9f0
+calling foo: n-i = 64, &i = 0x7ffff9d8
+calling foo: n-i = 65, &i = 0x7ffff9c0
+calling foo: n-i = 66, &i = 0x7ffff9a8
+calling foo: n-i = 67, &i = 0x7ffff990
+calling foo: n-i = 68, &i = 0x7ffff978
+calling foo: n-i = 69, &i = 0x7ffff960
+calling foo: n-i = 70, &i = 0x7ffff948
+calling foo: n-i = 71, &i = 0x7ffff930
+calling foo: n-i = 72, &i = 0x7ffff918
+calling foo: n-i = 73, &i = 0x7ffff900
+calling foo: n-i = 74, &i = 0x7ffff8e8
+calling foo: n-i = 75, &i = 0x7ffff8d0
+calling foo: n-i = 76, &i = 0x7ffff8b8
+calling foo: n-i = 77, &i = 0x7ffff8a0
+calling foo: n-i = 78, &i = 0x7ffff888
+calling foo: n-i = 79, &i = 0x7ffff870
+calling foo: n-i = 80, &i = 0x7ffff858
+calling foo: n-i = 81, &i = 0x7ffff840
+calling foo: n-i = 82, &i = 0x7ffff828
+calling foo: n-i = 83, &i = 0x7ffff810
+calling foo: n-i = 84, &i = 0x7ffff7f8
+calling foo: n-i = 85, &i = 0x7ffff7e0
+calling foo: n-i = 86, &i = 0x7ffff7c8
+calling foo: n-i = 87, &i = 0x7ffff7b0
+calling foo: n-i = 88, &i = 0x7ffff798
+calling foo: n-i = 89, &i = 0x7ffff780
+calling foo: n-i = 90, &i = 0x7ffff768
+calling foo: n-i = 91, &i = 0x7ffff750
+calling foo: n-i = 92, &i = 0x7ffff738
+calling foo: n-i = 93, &i = 0x7ffff720
+calling foo: n-i = 94, &i = 0x7ffff708
+calling foo: n-i = 95, &i = 0x7ffff6f0
+calling foo: n-i = 96, &i = 0x7ffff6d8
+calling foo: n-i = 97, &i = 0x7ffff6c0
+calling foo: n-i = 98, &i = 0x7ffff6a8
+calling foo: n-i = 99, &i = 0x7ffff690
+calling foo: n-i = 100, &i = 0x7ffff678
+calling foo: n-i = 101, &i = 0x7ffff660
+calling foo: n-i = 102, &i = 0x7ffff648
+calling foo: n-i = 103, &i = 0x7ffff630
+calling foo: n-i = 104, &i = 0x7ffff618
+calling foo: n-i = 105, &i = 0x7ffff600
+calling foo: n-i = 106, &i = 0x7ffff5e8
+calling foo: n-i = 107, &i = 0x7ffff5d0
+calling foo: n-i = 108, &i = 0x7ffff5b8
+calling foo: n-i = 109, &i = 0x7ffff5a0
+calling foo: n-i = 110, &i = 0x7ffff588
+calling foo: n-i = 111, &i = 0x7ffff570
+calling foo: n-i = 112, &i = 0x7ffff558
+calling foo: n-i = 113, &i = 0x7ffff540
+calling foo: n-i = 114, &i = 0x7ffff528
+calling foo: n-i = 115, &i = 0x7ffff510
+calling foo: n-i = 116, &i = 0x7ffff4f8
+calling foo: n-i = 117, &i = 0x7ffff4e0
+calling foo: n-i = 118, &i = 0x7ffff4c8
+calling foo: n-i = 119, &i = 0x7ffff4b0
+calling foo: n-i = 120, &i = 0x7ffff498
+calling foo: n-i = 121, &i = 0x7ffff480
+calling foo: n-i = 122, &i = 0x7ffff468
+calling foo: n-i = 123, &i = 0x7ffff450
+calling foo: n-i = 124, &i = 0x7ffff438
+calling foo: n-i = 125, &i = 0x7ffff420
+calling foo: n-i = 126, &i = 0x7ffff408
+calling foo: n-i = 127, &i = 0x7ffff3f0
+calling foo: n-i = 128, &i = 0x7ffff3d8
+calling foo: n-i = 129, &i = 0x7ffff3c0
+calling foo: n-i = 130, &i = 0x7ffff3a8
+calling foo: n-i = 131, &i = 0x7ffff390
+calling foo: n-i = 132, &i = 0x7ffff378
+calling foo: n-i = 133, &i = 0x7ffff360
+calling foo: n-i = 134, &i = 0x7ffff348
+calling foo: n-i = 135, &i = 0x7ffff330
+calling foo: n-i = 136, &i = 0x7ffff318
+calling foo: n-i = 137, &i = 0x7ffff300
+calling foo: n-i = 138, &i = 0x7ffff2e8
+calling foo: n-i = 139, &i = 0x7ffff2d0
+calling foo: n-i = 140, &i = 0x7ffff2b8
+calling foo: n-i = 141, &i = 0x7ffff2a0
+calling foo: n-i = 142, &i = 0x7ffff288
+calling foo: n-i = 143, &i = 0x7ffff270
+calling foo: n-i = 144, &i = 0x7ffff258
+calling foo: n-i = 145, &i = 0x7ffff240
+calling foo: n-i = 146, &i = 0x7ffff228
+calling foo: n-i = 147, &i = 0x7ffff210
+calling foo: n-i = 148, &i = 0x7ffff1f8
+calling foo: n-i = 149, &i = 0x7ffff1e0
+calling foo: n-i = 150, &i = 0x7ffff1c8
+calling foo: n-i = 151, &i = 0x7ffff1b0
+calling foo: n-i = 152, &i = 0x7ffff198
+calling foo: n-i = 153, &i = 0x7ffff180
+calling foo: n-i = 154, &i = 0x7ffff168
+calling foo: n-i = 155, &i = 0x7ffff150
+calling foo: n-i = 156, &i = 0x7ffff138
+calling foo: n-i = 157, &i = 0x7ffff120
+calling foo: n-i = 158, &i = 0x7ffff108
+calling foo: n-i = 159, &i = 0x7ffff0f0
+calling foo: n-i = 160, &i = 0x7ffff0d8
+calling foo: n-i = 161, &i = 0x7ffff0c0
+calling foo: n-i = 162, &i = 0x7ffff0a8
+calling foo: n-i = 163, &i = 0x7ffff090
+calling foo: n-i = 164, &i = 0x7ffff078
+calling foo: n-i = 165, &i = 0x7ffff060
+calling foo: n-i = 166, &i = 0x7ffff048
+calling foo: n-i = 167, &i = 0x7ffff030
+calling foo: n-i = 168, &i = 0x7ffff018
+calling foo: n-i = 169, &i = 0x7ffff000
+calling foo: n-i = 170, &i = 0x7fffefe8
+calling foo: n-i = 171, &i = 0x7fffefd0
+calling foo: n-i = 172, &i = 0x7fffefb8
+calling foo: n-i = 173, &i = 0x7fffefa0
+calling foo: n-i = 174, &i = 0x7fffef88
+calling foo: n-i = 175, &i = 0x7fffef70
+calling foo: n-i = 176, &i = 0x7fffef58
+calling foo: n-i = 177, &i = 0x7fffef40
+calling foo: n-i = 178, &i = 0x7fffef28
+calling foo: n-i = 179, &i = 0x7fffef10
+calling foo: n-i = 180, &i = 0x7fffeef8
+calling foo: n-i = 181, &i = 0x7fffeee0
+calling foo: n-i = 182, &i = 0x7fffeec8
+calling foo: n-i = 183, &i = 0x7fffeeb0
+calling foo: n-i = 184, &i = 0x7fffee98
+calling foo: n-i = 185, &i = 0x7fffee80
+calling foo: n-i = 186, &i = 0x7fffee68
+calling foo: n-i = 187, &i = 0x7fffee50
+calling foo: n-i = 188, &i = 0x7fffee38
+calling foo: n-i = 189, &i = 0x7fffee20
+calling foo: n-i = 190, &i = 0x7fffee08
+calling foo: n-i = 191, &i = 0x7fffedf0
+calling foo: n-i = 192, &i = 0x7fffedd8
+calling foo: n-i = 193, &i = 0x7fffedc0
+calling foo: n-i = 194, &i = 0x7fffeda8
+calling foo: n-i = 195, &i = 0x7fffed90
+calling foo: n-i = 196, &i = 0x7fffed78
+calling foo: n-i = 197, &i = 0x7fffed60
+calling foo: n-i = 198, &i = 0x7fffed48
+calling foo: n-i = 199, &i = 0x7fffed30
+calling foo: n-i = 200, &i = 0x7fffed18
+calling foo: n-i = 201, &i = 0x7fffed00
+calling foo: n-i = 202, &i = 0x7fffece8
+calling foo: n-i = 203, &i = 0x7fffecd0
+calling foo: n-i = 204, &i = 0x7fffecb8
+calling foo: n-i = 205, &i = 0x7fffeca0
+calling foo: n-i = 206, &i = 0x7fffec88
+calling foo: n-i = 207, &i = 0x7fffec70
+calling foo: n-i = 208, &i = 0x7fffec58
+calling foo: n-i = 209, &i = 0x7fffec40
+calling foo: n-i = 210, &i = 0x7fffec28
+calling foo: n-i = 211, &i = 0x7fffec10
+calling foo: n-i = 212, &i = 0x7fffebf8
+calling foo: n-i = 213, &i = 0x7fffebe0
+calling foo: n-i = 214, &i = 0x7fffebc8
+calling foo: n-i = 215, &i = 0x7fffebb0
+calling foo: n-i = 216, &i = 0x7fffeb98
+calling foo: n-i = 217, &i = 0x7fffeb80
+calling foo: n-i = 218, &i = 0x7fffeb68
+calling foo: n-i = 219, &i = 0x7fffeb50
+calling foo: n-i = 220, &i = 0x7fffeb38
+calling foo: n-i = 221, &i = 0x7fffeb20
+calling foo: n-i = 222, &i = 0x7fffeb08
+calling foo: n-i = 223, &i = 0x7fffeaf0
+calling foo: n-i = 224, &i = 0x7fffead8
+calling foo: n-i = 225, &i = 0x7fffeac0
+calling foo: n-i = 226, &i = 0x7fffeaa8
+calling foo: n-i = 227, &i = 0x7fffea90
+calling foo: n-i = 228, &i = 0x7fffea78
+calling foo: n-i = 229, &i = 0x7fffea60
+calling foo: n-i = 230, &i = 0x7fffea48
+calling foo: n-i = 231, &i = 0x7fffea30
+calling foo: n-i = 232, &i = 0x7fffea18
+calling foo: n-i = 233, &i = 0x7fffea00
+calling foo: n-i = 234, &i = 0x7fffe9e8
+calling foo: n-i = 235, &i = 0x7fffe9d0
+calling foo: n-i = 236, &i = 0x7fffe9b8
+calling foo: n-i = 237, &i = 0x7fffe9a0
+calling foo: n-i = 238, &i = 0x7fffe988
+calling foo: n-i = 239, &i = 0x7fffe970
+calling foo: n-i = 240, &i = 0x7fffe958
+calling foo: n-i = 241, &i = 0x7fffe940
+calling foo: n-i = 242, &i = 0x7fffe928
+calling foo: n-i = 243, &i = 0x7fffe910
+calling foo: n-i = 244, &i = 0x7fffe8f8
+calling foo: n-i = 245, &i = 0x7fffe8e0
+calling foo: n-i = 246, &i = 0x7fffe8c8
+calling foo: n-i = 247, &i = 0x7fffe8b0
+calling foo: n-i = 248, &i = 0x7fffe898
+calling foo: n-i = 249, &i = 0x7fffe880
+calling foo: n-i = 250, &i = 0x7fffe868
+calling foo: n-i = 251, &i = 0x7fffe850
+calling foo: n-i = 252, &i = 0x7fffe838
+calling foo: n-i = 253, &i = 0x7fffe820
+calling foo: n-i = 254, &i = 0x7fffe808
+calling foo: n-i = 255, &i = 0x7fffe7f0
+calling foo: n-i = 256, &i = 0x7fffe7d8
+calling foo: n-i = 257, &i = 0x7fffe7c0
+calling foo: n-i = 258, &i = 0x7fffe7a8
+calling foo: n-i = 259, &i = 0x7fffe790
+calling foo: n-i = 260, &i = 0x7fffe778
+calling foo: n-i = 261, &i = 0x7fffe760
+calling foo: n-i = 262, &i = 0x7fffe748
+calling foo: n-i = 263, &i = 0x7fffe730
+calling foo: n-i = 264, &i = 0x7fffe718
+calling foo: n-i = 265, &i = 0x7fffe700
+calling foo: n-i = 266, &i = 0x7fffe6e8
+calling foo: n-i = 267, &i = 0x7fffe6d0
+calling foo: n-i = 268, &i = 0x7fffe6b8
+calling foo: n-i = 269, &i = 0x7fffe6a0
+calling foo: n-i = 270, &i = 0x7fffe688
+calling foo: n-i = 271, &i = 0x7fffe670
+calling foo: n-i = 272, &i = 0x7fffe658
+calling foo: n-i = 273, &i = 0x7fffe640
+calling foo: n-i = 274, &i = 0x7fffe628
+calling foo: n-i = 275, &i = 0x7fffe610
+calling foo: n-i = 276, &i = 0x7fffe5f8
+calling foo: n-i = 277, &i = 0x7fffe5e0
+calling foo: n-i = 278, &i = 0x7fffe5c8
+calling foo: n-i = 279, &i = 0x7fffe5b0
+calling foo: n-i = 280, &i = 0x7fffe598
+calling foo: n-i = 281, &i = 0x7fffe580
+calling foo: n-i = 282, &i = 0x7fffe568
+calling foo: n-i = 283, &i = 0x7fffe550
+calling foo: n-i = 284, &i = 0x7fffe538
+calling foo: n-i = 285, &i = 0x7fffe520
+calling foo: n-i = 286, &i = 0x7fffe508
+calling foo: n-i = 287, &i = 0x7fffe4f0
+calling foo: n-i = 288, &i = 0x7fffe4d8
+calling foo: n-i = 289, &i = 0x7fffe4c0
+calling foo: n-i = 290, &i = 0x7fffe4a8
+calling foo: n-i = 291, &i = 0x7fffe490
+calling foo: n-i = 292, &i = 0x7fffe478
+calling foo: n-i = 293, &i = 0x7fffe460
+calling foo: n-i = 294, &i = 0x7fffe448
+calling foo: n-i = 295, &i = 0x7fffe430
+calling foo: n-i = 296, &i = 0x7fffe418
+calling foo: n-i = 297, &i = 0x7fffe400
+calling foo: n-i = 298, &i = 0x7fffe3e8
+calling foo: n-i = 299, &i = 0x7fffe3d0
+calling foo: n-i = 300, &i = 0x7fffe3b8
+calling foo: n-i = 301, &i = 0x7fffe3a0
+calling foo: n-i = 302, &i = 0x7fffe388
+calling foo: n-i = 303, &i = 0x7fffe370
+calling foo: n-i = 304, &i = 0x7fffe358
+calling foo: n-i = 305, &i = 0x7fffe340
+calling foo: n-i = 306, &i = 0x7fffe328
+calling foo: n-i = 307, &i = 0x7fffe310
+calling foo: n-i = 308, &i = 0x7fffe2f8
+calling foo: n-i = 309, &i = 0x7fffe2e0
+calling foo: n-i = 310, &i = 0x7fffe2c8
+calling foo: n-i = 311, &i = 0x7fffe2b0
+calling foo: n-i = 312, &i = 0x7fffe298
+calling foo: n-i = 313, &i = 0x7fffe280
+calling foo: n-i = 314, &i = 0x7fffe268
+calling foo: n-i = 315, &i = 0x7fffe250
+calling foo: n-i = 316, &i = 0x7fffe238
+calling foo: n-i = 317, &i = 0x7fffe220
+calling foo: n-i = 318, &i = 0x7fffe208
+calling foo: n-i = 319, &i = 0x7fffe1f0
+calling foo: n-i = 320, &i = 0x7fffe1d8
+calling foo: n-i = 321, &i = 0x7fffe1c0
+calling foo: n-i = 322, &i = 0x7fffe1a8
+calling foo: n-i = 323, &i = 0x7fffe190
+calling foo: n-i = 324, &i = 0x7fffe178
+calling foo: n-i = 325, &i = 0x7fffe160
+calling foo: n-i = 326, &i = 0x7fffe148
+calling foo: n-i = 327, &i = 0x7fffe130
+calling foo: n-i = 328, &i = 0x7fffe118
+calling foo: n-i = 329, &i = 0x7fffe100
+calling foo: n-i = 330, &i = 0x7fffe0e8
+calling foo: n-i = 331, &i = 0x7fffe0d0
+calling foo: n-i = 332, &i = 0x7fffe0b8
+calling foo: n-i = 333, &i = 0x7fffe0a0
+calling foo: n-i = 334, &i = 0x7fffe088
+calling foo: n-i = 335, &i = 0x7fffe070
+calling foo: n-i = 336, &i = 0x7fffe058
+calling foo: n-i = 337, &i = 0x7fffe040
+calling foo: n-i = 338, &i = 0x7fffe028
+calling foo: n-i = 339, &i = 0x7fffe010
+calling foo: n-i = 340, &i = 0x7fffdff8
+calling foo: n-i = 341, &i = 0x7fffdfe0
+calling foo: n-i = 342, &i = 0x7fffdfc8
+calling foo: n-i = 343, &i = 0x7fffdfb0
+calling foo: n-i = 344, &i = 0x7fffdf98
+calling foo: n-i = 345, &i = 0x7fffdf80
+calling foo: n-i = 346, &i = 0x7fffdf68
+calling foo: n-i = 347, &i = 0x7fffdf50
+calling foo: n-i = 348, &i = 0x7fffdf38
+calling foo: n-i = 349, &i = 0x7fffdf20
+calling foo: n-i = 350, &i = 0x7fffdf08
+calling foo: n-i = 351, &i = 0x7fffdef0
+calling foo: n-i = 352, &i = 0x7fffded8
+calling foo: n-i = 353, &i = 0x7fffdec0
+calling foo: n-i = 354, &i = 0x7fffdea8
+calling foo: n-i = 355, &i = 0x7fffde90
+calling foo: n-i = 356, &i = 0x7fffde78
+calling foo: n-i = 357, &i = 0x7fffde60
+calling foo: n-i = 358, &i = 0x7fffde48
+calling foo: n-i = 359, &i = 0x7fffde30
+calling foo: n-i = 360, &i = 0x7fffde18
+calling foo: n-i = 361, &i = 0x7fffde00
+calling foo: n-i = 362, &i = 0x7fffdde8
+calling foo: n-i = 363, &i = 0x7fffddd0
+calling foo: n-i = 364, &i = 0x7fffddb8
+calling foo: n-i = 365, &i = 0x7fffdda0
+calling foo: n-i = 366, &i = 0x7fffdd88
+calling foo: n-i = 367, &i = 0x7fffdd70
+calling foo: n-i = 368, &i = 0x7fffdd58
+calling foo: n-i = 369, &i = 0x7fffdd40
+calling foo: n-i = 370, &i = 0x7fffdd28
+calling foo: n-i = 371, &i = 0x7fffdd10
+calling foo: n-i = 372, &i = 0x7fffdcf8
+calling foo: n-i = 373, &i = 0x7fffdce0
+calling foo: n-i = 374, &i = 0x7fffdcc8
+calling foo: n-i = 375, &i = 0x7fffdcb0
+calling foo: n-i = 376, &i = 0x7fffdc98
+calling foo: n-i = 377, &i = 0x7fffdc80
+calling foo: n-i = 378, &i = 0x7fffdc68
+calling foo: n-i = 379, &i = 0x7fffdc50
+calling foo: n-i = 380, &i = 0x7fffdc38
+calling foo: n-i = 381, &i = 0x7fffdc20
+calling foo: n-i = 382, &i = 0x7fffdc08
+calling foo: n-i = 383, &i = 0x7fffdbf0
+calling foo: n-i = 384, &i = 0x7fffdbd8
+calling foo: n-i = 385, &i = 0x7fffdbc0
+calling foo: n-i = 386, &i = 0x7fffdba8
+calling foo: n-i = 387, &i = 0x7fffdb90
+calling foo: n-i = 388, &i = 0x7fffdb78
+calling foo: n-i = 389, &i = 0x7fffdb60
+calling foo: n-i = 390, &i = 0x7fffdb48
+calling foo: n-i = 391, &i = 0x7fffdb30
+calling foo: n-i = 392, &i = 0x7fffdb18
+calling foo: n-i = 393, &i = 0x7fffdb00
+calling foo: n-i = 394, &i = 0x7fffdae8
+calling foo: n-i = 395, &i = 0x7fffdad0
+calling foo: n-i = 396, &i = 0x7fffdab8
+calling foo: n-i = 397, &i = 0x7fffdaa0
+calling foo: n-i = 398, &i = 0x7fffda88
+calling foo: n-i = 399, &i = 0x7fffda70
+calling foo: n-i = 400, &i = 0x7fffda58
+calling foo: n-i = 401, &i = 0x7fffda40
+calling foo: n-i = 402, &i = 0x7fffda28
+calling foo: n-i = 403, &i = 0x7fffda10
+calling foo: n-i = 404, &i = 0x7fffd9f8
+calling foo: n-i = 405, &i = 0x7fffd9e0
+calling foo: n-i = 406, &i = 0x7fffd9c8
+calling foo: n-i = 407, &i = 0x7fffd9b0
+calling foo: n-i = 408, &i = 0x7fffd998
+calling foo: n-i = 409, &i = 0x7fffd980
+calling foo: n-i = 410, &i = 0x7fffd968
+calling foo: n-i = 411, &i = 0x7fffd950
+calling foo: n-i = 412, &i = 0x7fffd938
+calling foo: n-i = 413, &i = 0x7fffd920
+calling foo: n-i = 414, &i = 0x7fffd908
+calling foo: n-i = 415, &i = 0x7fffd8f0
+calling foo: n-i = 416, &i = 0x7fffd8d8
+calling foo: n-i = 417, &i = 0x7fffd8c0
+calling foo: n-i = 418, &i = 0x7fffd8a8
+calling foo: n-i = 419, &i = 0x7fffd890
+calling foo: n-i = 420, &i = 0x7fffd878
+calling foo: n-i = 421, &i = 0x7fffd860
+calling foo: n-i = 422, &i = 0x7fffd848
+calling foo: n-i = 423, &i = 0x7fffd830
+calling foo: n-i = 424, &i = 0x7fffd818
+calling foo: n-i = 425, &i = 0x7fffd800
+calling foo: n-i = 426, &i = 0x7fffd7e8
+calling foo: n-i = 427, &i = 0x7fffd7d0
+calling foo: n-i = 428, &i = 0x7fffd7b8
+calling foo: n-i = 429, &i = 0x7fffd7a0
+calling foo: n-i = 430, &i = 0x7fffd788
+calling foo: n-i = 431, &i = 0x7fffd770
+calling foo: n-i = 432, &i = 0x7fffd758
+calling foo: n-i = 433, &i = 0x7fffd740
+calling foo: n-i = 434, &i = 0x7fffd728
+calling foo: n-i = 435, &i = 0x7fffd710
+calling foo: n-i = 436, &i = 0x7fffd6f8
+calling foo: n-i = 437, &i = 0x7fffd6e0
+calling foo: n-i = 438, &i = 0x7fffd6c8
+calling foo: n-i = 439, &i = 0x7fffd6b0
+calling foo: n-i = 440, &i = 0x7fffd698
+calling foo: n-i = 441, &i = 0x7fffd680
+calling foo: n-i = 442, &i = 0x7fffd668
+calling foo: n-i = 443, &i = 0x7fffd650
+calling foo: n-i = 444, &i = 0x7fffd638
+calling foo: n-i = 445, &i = 0x7fffd620
+calling foo: n-i = 446, &i = 0x7fffd608
+calling foo: n-i = 447, &i = 0x7fffd5f0
+calling foo: n-i = 448, &i = 0x7fffd5d8
+calling foo: n-i = 449, &i = 0x7fffd5c0
+calling foo: n-i = 450, &i = 0x7fffd5a8
+calling foo: n-i = 451, &i = 0x7fffd590
+calling foo: n-i = 452, &i = 0x7fffd578
+calling foo: n-i = 453, &i = 0x7fffd560
+calling foo: n-i = 454, &i = 0x7fffd548
+calling foo: n-i = 455, &i = 0x7fffd530
+calling foo: n-i = 456, &i = 0x7fffd518
+calling foo: n-i = 457, &i = 0x7fffd500
+calling foo: n-i = 458, &i = 0x7fffd4e8
+calling foo: n-i = 459, &i = 0x7fffd4d0
+calling foo: n-i = 460, &i = 0x7fffd4b8
+calling foo: n-i = 461, &i = 0x7fffd4a0
+calling foo: n-i = 462, &i = 0x7fffd488
+calling foo: n-i = 463, &i = 0x7fffd470
+calling foo: n-i = 464, &i = 0x7fffd458
+calling foo: n-i = 465, &i = 0x7fffd440
+calling foo: n-i = 466, &i = 0x7fffd428
+calling foo: n-i = 467, &i = 0x7fffd410
+calling foo: n-i = 468, &i = 0x7fffd3f8
+calling foo: n-i = 469, &i = 0x7fffd3e0
+calling foo: n-i = 470, &i = 0x7fffd3c8
+calling foo: n-i = 471, &i = 0x7fffd3b0
+calling foo: n-i = 472, &i = 0x7fffd398
+calling foo: n-i = 473, &i = 0x7fffd380
+calling foo: n-i = 474, &i = 0x7fffd368
+calling foo: n-i = 475, &i = 0x7fffd350
+calling foo: n-i = 476, &i = 0x7fffd338
+calling foo: n-i = 477, &i = 0x7fffd320
+calling foo: n-i = 478, &i = 0x7fffd308
+calling foo: n-i = 479, &i = 0x7fffd2f0
+calling foo: n-i = 480, &i = 0x7fffd2d8
+calling foo: n-i = 481, &i = 0x7fffd2c0
+calling foo: n-i = 482, &i = 0x7fffd2a8
+calling foo: n-i = 483, &i = 0x7fffd290
+calling foo: n-i = 484, &i = 0x7fffd278
+calling foo: n-i = 485, &i = 0x7fffd260
+calling foo: n-i = 486, &i = 0x7fffd248
+calling foo: n-i = 487, &i = 0x7fffd230
+calling foo: n-i = 488, &i = 0x7fffd218
+calling foo: n-i = 489, &i = 0x7fffd200
+calling foo: n-i = 490, &i = 0x7fffd1e8
+calling foo: n-i = 491, &i = 0x7fffd1d0
+calling foo: n-i = 492, &i = 0x7fffd1b8
+calling foo: n-i = 493, &i = 0x7fffd1a0
+calling foo: n-i = 494, &i = 0x7fffd188
+calling foo: n-i = 495, &i = 0x7fffd170
+calling foo: n-i = 496, &i = 0x7fffd158
+calling foo: n-i = 497, &i = 0x7fffd140
+calling foo: n-i = 498, &i = 0x7fffd128
+calling foo: n-i = 499, &i = 0x7fffd110
+calling foo: n-i = 500, &i = 0x7fffd0f8
+calling foo: n-i = 501, &i = 0x7fffd0e0
+calling foo: n-i = 502, &i = 0x7fffd0c8
+calling foo: n-i = 503, &i = 0x7fffd0b0
+calling foo: n-i = 504, &i = 0x7fffd098
+calling foo: n-i = 505, &i = 0x7fffd080
+calling foo: n-i = 506, &i = 0x7fffd068
+calling foo: n-i = 507, &i = 0x7fffd050
+calling foo: n-i = 508, &i = 0x7fffd038
+calling foo: n-i = 509, &i = 0x7fffd020
+calling foo: n-i = 510, &i = 0x7fffd008
+calling foo: n-i = 511, &i = 0x7fffcff0
+calling foo: n-i = 512, &i = 0x7fffcfd8
+calling foo: n-i = 513, &i = 0x7fffcfc0
+calling foo: n-i = 514, &i = 0x7fffcfa8
+calling foo: n-i = 515, &i = 0x7fffcf90
+calling foo: n-i = 516, &i = 0x7fffcf78
+calling foo: n-i = 517, &i = 0x7fffcf60
+calling foo: n-i = 518, &i = 0x7fffcf48
+calling foo: n-i = 519, &i = 0x7fffcf30
+calling foo: n-i = 520, &i = 0x7fffcf18
+calling foo: n-i = 521, &i = 0x7fffcf00
+calling foo: n-i = 522, &i = 0x7fffcee8
+calling foo: n-i = 523, &i = 0x7fffced0
+calling foo: n-i = 524, &i = 0x7fffceb8
+calling foo: n-i = 525, &i = 0x7fffcea0
+calling foo: n-i = 526, &i = 0x7fffce88
+calling foo: n-i = 527, &i = 0x7fffce70
+calling foo: n-i = 528, &i = 0x7fffce58
+calling foo: n-i = 529, &i = 0x7fffce40
+calling foo: n-i = 530, &i = 0x7fffce28
+calling foo: n-i = 531, &i = 0x7fffce10
+calling foo: n-i = 532, &i = 0x7fffcdf8
+calling foo: n-i = 533, &i = 0x7fffcde0
+calling foo: n-i = 534, &i = 0x7fffcdc8
+calling foo: n-i = 535, &i = 0x7fffcdb0
+calling foo: n-i = 536, &i = 0x7fffcd98
+calling foo: n-i = 537, &i = 0x7fffcd80
+calling foo: n-i = 538, &i = 0x7fffcd68
+calling foo: n-i = 539, &i = 0x7fffcd50
+calling foo: n-i = 540, &i = 0x7fffcd38
+calling foo: n-i = 541, &i = 0x7fffcd20
+calling foo: n-i = 542, &i = 0x7fffcd08
+calling foo: n-i = 543, &i = 0x7fffccf0
+calling foo: n-i = 544, &i = 0x7fffccd8
+calling foo: n-i = 545, &i = 0x7fffccc0
+calling foo: n-i = 546, &i = 0x7fffcca8
+calling foo: n-i = 547, &i = 0x7fffcc90
+calling foo: n-i = 548, &i = 0x7fffcc78
+calling foo: n-i = 549, &i = 0x7fffcc60
+calling foo: n-i = 550, &i = 0x7fffcc48
+calling foo: n-i = 551, &i = 0x7fffcc30
+calling foo: n-i = 552, &i = 0x7fffcc18
+calling foo: n-i = 553, &i = 0x7fffcc00
+calling foo: n-i = 554, &i = 0x7fffcbe8
+calling foo: n-i = 555, &i = 0x7fffcbd0
+calling foo: n-i = 556, &i = 0x7fffcbb8
+calling foo: n-i = 557, &i = 0x7fffcba0
+calling foo: n-i = 558, &i = 0x7fffcb88
+calling foo: n-i = 559, &i = 0x7fffcb70
+calling foo: n-i = 560, &i = 0x7fffcb58
+calling foo: n-i = 561, &i = 0x7fffcb40
+calling foo: n-i = 562, &i = 0x7fffcb28
+calling foo: n-i = 563, &i = 0x7fffcb10
+calling foo: n-i = 564, &i = 0x7fffcaf8
+calling foo: n-i = 565, &i = 0x7fffcae0
+calling foo: n-i = 566, &i = 0x7fffcac8
+calling foo: n-i = 567, &i = 0x7fffcab0
+calling foo: n-i = 568, &i = 0x7fffca98
+calling foo: n-i = 569, &i = 0x7fffca80
+calling foo: n-i = 570, &i = 0x7fffca68
+calling foo: n-i = 571, &i = 0x7fffca50
+calling foo: n-i = 572, &i = 0x7fffca38
+calling foo: n-i = 573, &i = 0x7fffca20
+calling foo: n-i = 574, &i = 0x7fffca08
+calling foo: n-i = 575, &i = 0x7fffc9f0
+calling foo: n-i = 576, &i = 0x7fffc9d8
+calling foo: n-i = 577, &i = 0x7fffc9c0
+calling foo: n-i = 578, &i = 0x7fffc9a8
+calling foo: n-i = 579, &i = 0x7fffc990
+calling foo: n-i = 580, &i = 0x7fffc978
+calling foo: n-i = 581, &i = 0x7fffc960
+calling foo: n-i = 582, &i = 0x7fffc948
+calling foo: n-i = 583, &i = 0x7fffc930
+calling foo: n-i = 584, &i = 0x7fffc918
+calling foo: n-i = 585, &i = 0x7fffc900
+calling foo: n-i = 586, &i = 0x7fffc8e8
+calling foo: n-i = 587, &i = 0x7fffc8d0
+calling foo: n-i = 588, &i = 0x7fffc8b8
+calling foo: n-i = 589, &i = 0x7fffc8a0
+calling foo: n-i = 590, &i = 0x7fffc888
+calling foo: n-i = 591, &i = 0x7fffc870
+calling foo: n-i = 592, &i = 0x7fffc858
+calling foo: n-i = 593, &i = 0x7fffc840
+calling foo: n-i = 594, &i = 0x7fffc828
+calling foo: n-i = 595, &i = 0x7fffc810
+calling foo: n-i = 596, &i = 0x7fffc7f8
+calling foo: n-i = 597, &i = 0x7fffc7e0
+calling foo: n-i = 598, &i = 0x7fffc7c8
+calling foo: n-i = 599, &i = 0x7fffc7b0
+calling foo: n-i = 600, &i = 0x7fffc798
+calling foo: n-i = 601, &i = 0x7fffc780
+calling foo: n-i = 602, &i = 0x7fffc768
+calling foo: n-i = 603, &i = 0x7fffc750
+calling foo: n-i = 604, &i = 0x7fffc738
+calling foo: n-i = 605, &i = 0x7fffc720
+calling foo: n-i = 606, &i = 0x7fffc708
+calling foo: n-i = 607, &i = 0x7fffc6f0
+calling foo: n-i = 608, &i = 0x7fffc6d8
+calling foo: n-i = 609, &i = 0x7fffc6c0
+calling foo: n-i = 610, &i = 0x7fffc6a8
+calling foo: n-i = 611, &i = 0x7fffc690
+calling foo: n-i = 612, &i = 0x7fffc678
+calling foo: n-i = 613, &i = 0x7fffc660
+calling foo: n-i = 614, &i = 0x7fffc648
+calling foo: n-i = 615, &i = 0x7fffc630
+calling foo: n-i = 616, &i = 0x7fffc618
+calling foo: n-i = 617, &i = 0x7fffc600
+calling foo: n-i = 618, &i = 0x7fffc5e8
+calling foo: n-i = 619, &i = 0x7fffc5d0
+calling foo: n-i = 620, &i = 0x7fffc5b8
+calling foo: n-i = 621, &i = 0x7fffc5a0
+calling foo: n-i = 622, &i = 0x7fffc588
+calling foo: n-i = 623, &i = 0x7fffc570
+calling foo: n-i = 624, &i = 0x7fffc558
+calling foo: n-i = 625, &i = 0x7fffc540
+calling foo: n-i = 626, &i = 0x7fffc528
+calling foo: n-i = 627, &i = 0x7fffc510
+calling foo: n-i = 628, &i = 0x7fffc4f8
+calling foo: n-i = 629, &i = 0x7fffc4e0
+calling foo: n-i = 630, &i = 0x7fffc4c8
+calling foo: n-i = 631, &i = 0x7fffc4b0
+calling foo: n-i = 632, &i = 0x7fffc498
+calling foo: n-i = 633, &i = 0x7fffc480
+calling foo: n-i = 634, &i = 0x7fffc468
+calling foo: n-i = 635, &i = 0x7fffc450
+calling foo: n-i = 636, &i = 0x7fffc438
+calling foo: n-i = 637, &i = 0x7fffc420
+calling foo: n-i = 638, &i = 0x7fffc408
+calling foo: n-i = 639, &i = 0x7fffc3f0
+calling foo: n-i = 640, &i = 0x7fffc3d8
+calling foo: n-i = 641, &i = 0x7fffc3c0
+calling foo: n-i = 642, &i = 0x7fffc3a8
+calling foo: n-i = 643, &i = 0x7fffc390
+calling foo: n-i = 644, &i = 0x7fffc378
+calling foo: n-i = 645, &i = 0x7fffc360
+calling foo: n-i = 646, &i = 0x7fffc348
+calling foo: n-i = 647, &i = 0x7fffc330
+calling foo: n-i = 648, &i = 0x7fffc318
+calling foo: n-i = 649, &i = 0x7fffc300
+calling foo: n-i = 650, &i = 0x7fffc2e8
+calling foo: n-i = 651, &i = 0x7fffc2d0
+calling foo: n-i = 652, &i = 0x7fffc2b8
+calling foo: n-i = 653, &i = 0x7fffc2a0
+calling foo: n-i = 654, &i = 0x7fffc288
+calling foo: n-i = 655, &i = 0x7fffc270
+calling foo: n-i = 656, &i = 0x7fffc258
+calling foo: n-i = 657, &i = 0x7fffc240
+calling foo: n-i = 658, &i = 0x7fffc228
+calling foo: n-i = 659, &i = 0x7fffc210
+calling foo: n-i = 660, &i = 0x7fffc1f8
+calling foo: n-i = 661, &i = 0x7fffc1e0
+calling foo: n-i = 662, &i = 0x7fffc1c8
+calling foo: n-i = 663, &i = 0x7fffc1b0
+calling foo: n-i = 664, &i = 0x7fffc198
+calling foo: n-i = 665, &i = 0x7fffc180
+calling foo: n-i = 666, &i = 0x7fffc168
+calling foo: n-i = 667, &i = 0x7fffc150
+calling foo: n-i = 668, &i = 0x7fffc138
+calling foo: n-i = 669, &i = 0x7fffc120
+calling foo: n-i = 670, &i = 0x7fffc108
+calling foo: n-i = 671, &i = 0x7fffc0f0
+calling foo: n-i = 672, &i = 0x7fffc0d8
+calling foo: n-i = 673, &i = 0x7fffc0c0
+calling foo: n-i = 674, &i = 0x7fffc0a8
+calling foo: n-i = 675, &i = 0x7fffc090
+calling foo: n-i = 676, &i = 0x7fffc078
+calling foo: n-i = 677, &i = 0x7fffc060
+calling foo: n-i = 678, &i = 0x7fffc048
+calling foo: n-i = 679, &i = 0x7fffc030
+calling foo: n-i = 680, &i = 0x7fffc018
+calling foo: n-i = 681, &i = 0x7fffc000
+calling foo: n-i = 682, &i = 0x7fffbfe8
+calling foo: n-i = 683, &i = 0x7fffbfd0
+calling foo: n-i = 684, &i = 0x7fffbfb8
+calling foo: n-i = 685, &i = 0x7fffbfa0
+calling foo: n-i = 686, &i = 0x7fffbf88
+calling foo: n-i = 687, &i = 0x7fffbf70
+calling foo: n-i = 688, &i = 0x7fffbf58
+calling foo: n-i = 689, &i = 0x7fffbf40
+calling foo: n-i = 690, &i = 0x7fffbf28
+calling foo: n-i = 691, &i = 0x7fffbf10
+calling foo: n-i = 692, &i = 0x7fffbef8
+calling foo: n-i = 693, &i = 0x7fffbee0
+calling foo: n-i = 694, &i = 0x7fffbec8
+calling foo: n-i = 695, &i = 0x7fffbeb0
+calling foo: n-i = 696, &i = 0x7fffbe98
+calling foo: n-i = 697, &i = 0x7fffbe80
+calling foo: n-i = 698, &i = 0x7fffbe68
+calling foo: n-i = 699, &i = 0x7fffbe50
+calling foo: n-i = 700, &i = 0x7fffbe38
+calling foo: n-i = 701, &i = 0x7fffbe20
+calling foo: n-i = 702, &i = 0x7fffbe08
+calling foo: n-i = 703, &i = 0x7fffbdf0
+calling foo: n-i = 704, &i = 0x7fffbdd8
+calling foo: n-i = 705, &i = 0x7fffbdc0
+calling foo: n-i = 706, &i = 0x7fffbda8
+calling foo: n-i = 707, &i = 0x7fffbd90
+calling foo: n-i = 708, &i = 0x7fffbd78
+calling foo: n-i = 709, &i = 0x7fffbd60
+calling foo: n-i = 710, &i = 0x7fffbd48
+calling foo: n-i = 711, &i = 0x7fffbd30
+calling foo: n-i = 712, &i = 0x7fffbd18
+calling foo: n-i = 713, &i = 0x7fffbd00
+calling foo: n-i = 714, &i = 0x7fffbce8
+calling foo: n-i = 715, &i = 0x7fffbcd0
+calling foo: n-i = 716, &i = 0x7fffbcb8
+calling foo: n-i = 717, &i = 0x7fffbca0
+calling foo: n-i = 718, &i = 0x7fffbc88
+calling foo: n-i = 719, &i = 0x7fffbc70
+calling foo: n-i = 720, &i = 0x7fffbc58
+calling foo: n-i = 721, &i = 0x7fffbc40
+calling foo: n-i = 722, &i = 0x7fffbc28
+calling foo: n-i = 723, &i = 0x7fffbc10
+calling foo: n-i = 724, &i = 0x7fffbbf8
+calling foo: n-i = 725, &i = 0x7fffbbe0
+calling foo: n-i = 726, &i = 0x7fffbbc8
+calling foo: n-i = 727, &i = 0x7fffbbb0
+calling foo: n-i = 728, &i = 0x7fffbb98
+calling foo: n-i = 729, &i = 0x7fffbb80
+calling foo: n-i = 730, &i = 0x7fffbb68
+calling foo: n-i = 731, &i = 0x7fffbb50
+calling foo: n-i = 732, &i = 0x7fffbb38
+calling foo: n-i = 733, &i = 0x7fffbb20
+calling foo: n-i = 734, &i = 0x7fffbb08
+calling foo: n-i = 735, &i = 0x7fffbaf0
+calling foo: n-i = 736, &i = 0x7fffbad8
+calling foo: n-i = 737, &i = 0x7fffbac0
+calling foo: n-i = 738, &i = 0x7fffbaa8
+calling foo: n-i = 739, &i = 0x7fffba90
+calling foo: n-i = 740, &i = 0x7fffba78
+calling foo: n-i = 741, &i = 0x7fffba60
+calling foo: n-i = 742, &i = 0x7fffba48
+calling foo: n-i = 743, &i = 0x7fffba30
+calling foo: n-i = 744, &i = 0x7fffba18
+calling foo: n-i = 745, &i = 0x7fffba00
+calling foo: n-i = 746, &i = 0x7fffb9e8
+calling foo: n-i = 747, &i = 0x7fffb9d0
+calling foo: n-i = 748, &i = 0x7fffb9b8
+calling foo: n-i = 749, &i = 0x7fffb9a0
+calling foo: n-i = 750, &i = 0x7fffb988
+calling foo: n-i = 751, &i = 0x7fffb970
+calling foo: n-i = 752, &i = 0x7fffb958
+calling foo: n-i = 753, &i = 0x7fffb940
+calling foo: n-i = 754, &i = 0x7fffb928
+calling foo: n-i = 755, &i = 0x7fffb910
+calling foo: n-i = 756, &i = 0x7fffb8f8
+calling foo: n-i = 757, &i = 0x7fffb8e0
+calling foo: n-i = 758, &i = 0x7fffb8c8
+calling foo: n-i = 759, &i = 0x7fffb8b0
+calling foo: n-i = 760, &i = 0x7fffb898
+calling foo: n-i = 761, &i = 0x7fffb880
+calling foo: n-i = 762, &i = 0x7fffb868
+calling foo: n-i = 763, &i = 0x7fffb850
+calling foo: n-i = 764, &i = 0x7fffb838
+calling foo: n-i = 765, &i = 0x7fffb820
+calling foo: n-i = 766, &i = 0x7fffb808
+calling foo: n-i = 767, &i = 0x7fffb7f0
+calling foo: n-i = 768, &i = 0x7fffb7d8
+calling foo: n-i = 769, &i = 0x7fffb7c0
+calling foo: n-i = 770, &i = 0x7fffb7a8
+calling foo: n-i = 771, &i = 0x7fffb790
+calling foo: n-i = 772, &i = 0x7fffb778
+calling foo: n-i = 773, &i = 0x7fffb760
+calling foo: n-i = 774, &i = 0x7fffb748
+calling foo: n-i = 775, &i = 0x7fffb730
+calling foo: n-i = 776, &i = 0x7fffb718
+calling foo: n-i = 777, &i = 0x7fffb700
+calling foo: n-i = 778, &i = 0x7fffb6e8
+calling foo: n-i = 779, &i = 0x7fffb6d0
+calling foo: n-i = 780, &i = 0x7fffb6b8
+calling foo: n-i = 781, &i = 0x7fffb6a0
+calling foo: n-i = 782, &i = 0x7fffb688
+calling foo: n-i = 783, &i = 0x7fffb670
+calling foo: n-i = 784, &i = 0x7fffb658
+calling foo: n-i = 785, &i = 0x7fffb640
+calling foo: n-i = 786, &i = 0x7fffb628
+calling foo: n-i = 787, &i = 0x7fffb610
+calling foo: n-i = 788, &i = 0x7fffb5f8
+calling foo: n-i = 789, &i = 0x7fffb5e0
+calling foo: n-i = 790, &i = 0x7fffb5c8
+calling foo: n-i = 791, &i = 0x7fffb5b0
+calling foo: n-i = 792, &i = 0x7fffb598
+calling foo: n-i = 793, &i = 0x7fffb580
+calling foo: n-i = 794, &i = 0x7fffb568
+calling foo: n-i = 795, &i = 0x7fffb550
+calling foo: n-i = 796, &i = 0x7fffb538
+calling foo: n-i = 797, &i = 0x7fffb520
+calling foo: n-i = 798, &i = 0x7fffb508
+calling foo: n-i = 799, &i = 0x7fffb4f0
+calling foo: n-i = 800, &i = 0x7fffb4d8
+calling foo: n-i = 801, &i = 0x7fffb4c0
+calling foo: n-i = 802, &i = 0x7fffb4a8
+calling foo: n-i = 803, &i = 0x7fffb490
+calling foo: n-i = 804, &i = 0x7fffb478
+calling foo: n-i = 805, &i = 0x7fffb460
+calling foo: n-i = 806, &i = 0x7fffb448
+calling foo: n-i = 807, &i = 0x7fffb430
+calling foo: n-i = 808, &i = 0x7fffb418
+calling foo: n-i = 809, &i = 0x7fffb400
+calling foo: n-i = 810, &i = 0x7fffb3e8
+calling foo: n-i = 811, &i = 0x7fffb3d0
+calling foo: n-i = 812, &i = 0x7fffb3b8
+calling foo: n-i = 813, &i = 0x7fffb3a0
+calling foo: n-i = 814, &i = 0x7fffb388
+calling foo: n-i = 815, &i = 0x7fffb370
+calling foo: n-i = 816, &i = 0x7fffb358
+calling foo: n-i = 817, &i = 0x7fffb340
+calling foo: n-i = 818, &i = 0x7fffb328
+calling foo: n-i = 819, &i = 0x7fffb310
+calling foo: n-i = 820, &i = 0x7fffb2f8
+calling foo: n-i = 821, &i = 0x7fffb2e0
+calling foo: n-i = 822, &i = 0x7fffb2c8
+calling foo: n-i = 823, &i = 0x7fffb2b0
+calling foo: n-i = 824, &i = 0x7fffb298
+calling foo: n-i = 825, &i = 0x7fffb280
+calling foo: n-i = 826, &i = 0x7fffb268
+calling foo: n-i = 827, &i = 0x7fffb250
+calling foo: n-i = 828, &i = 0x7fffb238
+calling foo: n-i = 829, &i = 0x7fffb220
+calling foo: n-i = 830, &i = 0x7fffb208
+calling foo: n-i = 831, &i = 0x7fffb1f0
+calling foo: n-i = 832, &i = 0x7fffb1d8
+calling foo: n-i = 833, &i = 0x7fffb1c0
+calling foo: n-i = 834, &i = 0x7fffb1a8
+calling foo: n-i = 835, &i = 0x7fffb190
+calling foo: n-i = 836, &i = 0x7fffb178
+calling foo: n-i = 837, &i = 0x7fffb160
+calling foo: n-i = 838, &i = 0x7fffb148
+calling foo: n-i = 839, &i = 0x7fffb130
+calling foo: n-i = 840, &i = 0x7fffb118
+calling foo: n-i = 841, &i = 0x7fffb100
+calling foo: n-i = 842, &i = 0x7fffb0e8
+calling foo: n-i = 843, &i = 0x7fffb0d0
+calling foo: n-i = 844, &i = 0x7fffb0b8
+calling foo: n-i = 845, &i = 0x7fffb0a0
+calling foo: n-i = 846, &i = 0x7fffb088
+calling foo: n-i = 847, &i = 0x7fffb070
+calling foo: n-i = 848, &i = 0x7fffb058
+calling foo: n-i = 849, &i = 0x7fffb040
+calling foo: n-i = 850, &i = 0x7fffb028
+calling foo: n-i = 851, &i = 0x7fffb010
+calling foo: n-i = 852, &i = 0x7fffaff8
+calling foo: n-i = 853, &i = 0x7fffafe0
+calling foo: n-i = 854, &i = 0x7fffafc8
+calling foo: n-i = 855, &i = 0x7fffafb0
+calling foo: n-i = 856, &i = 0x7fffaf98
+calling foo: n-i = 857, &i = 0x7fffaf80
+calling foo: n-i = 858, &i = 0x7fffaf68
+calling foo: n-i = 859, &i = 0x7fffaf50
+calling foo: n-i = 860, &i = 0x7fffaf38
+calling foo: n-i = 861, &i = 0x7fffaf20
+calling foo: n-i = 862, &i = 0x7fffaf08
+calling foo: n-i = 863, &i = 0x7fffaef0
+calling foo: n-i = 864, &i = 0x7fffaed8
+calling foo: n-i = 865, &i = 0x7fffaec0
+calling foo: n-i = 866, &i = 0x7fffaea8
+calling foo: n-i = 867, &i = 0x7fffae90
+calling foo: n-i = 868, &i = 0x7fffae78
+calling foo: n-i = 869, &i = 0x7fffae60
+calling foo: n-i = 870, &i = 0x7fffae48
+calling foo: n-i = 871, &i = 0x7fffae30
+calling foo: n-i = 872, &i = 0x7fffae18
+calling foo: n-i = 873, &i = 0x7fffae00
+calling foo: n-i = 874, &i = 0x7fffade8
+calling foo: n-i = 875, &i = 0x7fffadd0
+calling foo: n-i = 876, &i = 0x7fffadb8
+calling foo: n-i = 877, &i = 0x7fffada0
+calling foo: n-i = 878, &i = 0x7fffad88
+calling foo: n-i = 879, &i = 0x7fffad70
+calling foo: n-i = 880, &i = 0x7fffad58
+calling foo: n-i = 881, &i = 0x7fffad40
+calling foo: n-i = 882, &i = 0x7fffad28
+calling foo: n-i = 883, &i = 0x7fffad10
+calling foo: n-i = 884, &i = 0x7fffacf8
+calling foo: n-i = 885, &i = 0x7ffface0
+calling foo: n-i = 886, &i = 0x7fffacc8
+calling foo: n-i = 887, &i = 0x7fffacb0
+calling foo: n-i = 888, &i = 0x7fffac98
+calling foo: n-i = 889, &i = 0x7fffac80
+calling foo: n-i = 890, &i = 0x7fffac68
+calling foo: n-i = 891, &i = 0x7fffac50
+calling foo: n-i = 892, &i = 0x7fffac38
+calling foo: n-i = 893, &i = 0x7fffac20
+calling foo: n-i = 894, &i = 0x7fffac08
+calling foo: n-i = 895, &i = 0x7fffabf0
+calling foo: n-i = 896, &i = 0x7fffabd8
+calling foo: n-i = 897, &i = 0x7fffabc0
+calling foo: n-i = 898, &i = 0x7fffaba8
+calling foo: n-i = 899, &i = 0x7fffab90
+calling foo: n-i = 900, &i = 0x7fffab78
+calling foo: n-i = 901, &i = 0x7fffab60
+calling foo: n-i = 902, &i = 0x7fffab48
+calling foo: n-i = 903, &i = 0x7fffab30
+calling foo: n-i = 904, &i = 0x7fffab18
+calling foo: n-i = 905, &i = 0x7fffab00
+calling foo: n-i = 906, &i = 0x7fffaae8
+calling foo: n-i = 907, &i = 0x7fffaad0
+calling foo: n-i = 908, &i = 0x7fffaab8
+calling foo: n-i = 909, &i = 0x7fffaaa0
+calling foo: n-i = 910, &i = 0x7fffaa88
+calling foo: n-i = 911, &i = 0x7fffaa70
+calling foo: n-i = 912, &i = 0x7fffaa58
+calling foo: n-i = 913, &i = 0x7fffaa40
+calling foo: n-i = 914, &i = 0x7fffaa28
+calling foo: n-i = 915, &i = 0x7fffaa10
+calling foo: n-i = 916, &i = 0x7fffa9f8
+calling foo: n-i = 917, &i = 0x7fffa9e0
+calling foo: n-i = 918, &i = 0x7fffa9c8
+calling foo: n-i = 919, &i = 0x7fffa9b0
+calling foo: n-i = 920, &i = 0x7fffa998
+calling foo: n-i = 921, &i = 0x7fffa980
+calling foo: n-i = 922, &i = 0x7fffa968
+calling foo: n-i = 923, &i = 0x7fffa950
+calling foo: n-i = 924, &i = 0x7fffa938
+calling foo: n-i = 925, &i = 0x7fffa920
+calling foo: n-i = 926, &i = 0x7fffa908
+calling foo: n-i = 927, &i = 0x7fffa8f0
+calling foo: n-i = 928, &i = 0x7fffa8d8
+calling foo: n-i = 929, &i = 0x7fffa8c0
+calling foo: n-i = 930, &i = 0x7fffa8a8
+calling foo: n-i = 931, &i = 0x7fffa890
+calling foo: n-i = 932, &i = 0x7fffa878
+calling foo: n-i = 933, &i = 0x7fffa860
+calling foo: n-i = 934, &i = 0x7fffa848
+calling foo: n-i = 935, &i = 0x7fffa830
+calling foo: n-i = 936, &i = 0x7fffa818
+calling foo: n-i = 937, &i = 0x7fffa800
+calling foo: n-i = 938, &i = 0x7fffa7e8
+calling foo: n-i = 939, &i = 0x7fffa7d0
+calling foo: n-i = 940, &i = 0x7fffa7b8
+calling foo: n-i = 941, &i = 0x7fffa7a0
+calling foo: n-i = 942, &i = 0x7fffa788
+calling foo: n-i = 943, &i = 0x7fffa770
+calling foo: n-i = 944, &i = 0x7fffa758
+calling foo: n-i = 945, &i = 0x7fffa740
+calling foo: n-i = 946, &i = 0x7fffa728
+calling foo: n-i = 947, &i = 0x7fffa710
+calling foo: n-i = 948, &i = 0x7fffa6f8
+calling foo: n-i = 949, &i = 0x7fffa6e0
+calling foo: n-i = 950, &i = 0x7fffa6c8
+calling foo: n-i = 951, &i = 0x7fffa6b0
+calling foo: n-i = 952, &i = 0x7fffa698
+calling foo: n-i = 953, &i = 0x7fffa680
+calling foo: n-i = 954, &i = 0x7fffa668
+calling foo: n-i = 955, &i = 0x7fffa650
+calling foo: n-i = 956, &i = 0x7fffa638
+calling foo: n-i = 957, &i = 0x7fffa620
+calling foo: n-i = 958, &i = 0x7fffa608
+calling foo: n-i = 959, &i = 0x7fffa5f0
+calling foo: n-i = 960, &i = 0x7fffa5d8
+calling foo: n-i = 961, &i = 0x7fffa5c0
+calling foo: n-i = 962, &i = 0x7fffa5a8
+calling foo: n-i = 963, &i = 0x7fffa590
+calling foo: n-i = 964, &i = 0x7fffa578
+calling foo: n-i = 965, &i = 0x7fffa560
+calling foo: n-i = 966, &i = 0x7fffa548
+calling foo: n-i = 967, &i = 0x7fffa530
+calling foo: n-i = 968, &i = 0x7fffa518
+calling foo: n-i = 969, &i = 0x7fffa500
+calling foo: n-i = 970, &i = 0x7fffa4e8
+calling foo: n-i = 971, &i = 0x7fffa4d0
+calling foo: n-i = 972, &i = 0x7fffa4b8
+calling foo: n-i = 973, &i = 0x7fffa4a0
+calling foo: n-i = 974, &i = 0x7fffa488
+calling foo: n-i = 975, &i = 0x7fffa470
+calling foo: n-i = 976, &i = 0x7fffa458
+calling foo: n-i = 977, &i = 0x7fffa440
+calling foo: n-i = 978, &i = 0x7fffa428
+calling foo: n-i = 979, &i = 0x7fffa410
+calling foo: n-i = 980, &i = 0x7fffa3f8
+calling foo: n-i = 981, &i = 0x7fffa3e0
+calling foo: n-i = 982, &i = 0x7fffa3c8
+calling foo: n-i = 983, &i = 0x7fffa3b0
+calling foo: n-i = 984, &i = 0x7fffa398
+calling foo: n-i = 985, &i = 0x7fffa380
+calling foo: n-i = 986, &i = 0x7fffa368
+calling foo: n-i = 987, &i = 0x7fffa350
+calling foo: n-i = 988, &i = 0x7fffa338
+calling foo: n-i = 989, &i = 0x7fffa320
+calling foo: n-i = 990, &i = 0x7fffa308
+calling foo: n-i = 991, &i = 0x7fffa2f0
+calling foo: n-i = 992, &i = 0x7fffa2d8
+calling foo: n-i = 993, &i = 0x7fffa2c0
+calling foo: n-i = 994, &i = 0x7fffa2a8
+calling foo: n-i = 995, &i = 0x7fffa290
+calling foo: n-i = 996, &i = 0x7fffa278
+calling foo: n-i = 997, &i = 0x7fffa260
+calling foo: n-i = 998, &i = 0x7fffa248
+calling foo: n-i = 999, &i = 0x7fffa230
+calling foo: n-i = 1000, &i = 0x7fffa218
+calling foo: n-i = 1001, &i = 0x7fffa200
+calling foo: n-i = 1002, &i = 0x7fffa1e8
+calling foo: n-i = 1003, &i = 0x7fffa1d0
+calling foo: n-i = 1004, &i = 0x7fffa1b8
+calling foo: n-i = 1005, &i = 0x7fffa1a0
+calling foo: n-i = 1006, &i = 0x7fffa188
+calling foo: n-i = 1007, &i = 0x7fffa170
+calling foo: n-i = 1008, &i = 0x7fffa158
+calling foo: n-i = 1009, &i = 0x7fffa140
+calling foo: n-i = 1010, &i = 0x7fffa128
+calling foo: n-i = 1011, &i = 0x7fffa110
+calling foo: n-i = 1012, &i = 0x7fffa0f8
+calling foo: n-i = 1013, &i = 0x7fffa0e0
+calling foo: n-i = 1014, &i = 0x7fffa0c8
+calling foo: n-i = 1015, &i = 0x7fffa0b0
+calling foo: n-i = 1016, &i = 0x7fffa098
+calling foo: n-i = 1017, &i = 0x7fffa080
+calling foo: n-i = 1018, &i = 0x7fffa068
+calling foo: n-i = 1019, &i = 0x7fffa050
+calling foo: n-i = 1020, &i = 0x7fffa038
+calling foo: n-i = 1021, &i = 0x7fffa020
+calling foo: n-i = 1022, &i = 0x7fffa008
+calling foo: n-i = 1023, &i = 0x7fff9ff0
+calling foo: n-i = 1024, &i = 0x7fff9fd8
+calling foo: n-i = 1025, &i = 0x7fff9fc0
+calling foo: n-i = 1026, &i = 0x7fff9fa8
+calling foo: n-i = 1027, &i = 0x7fff9f90
+calling foo: n-i = 1028, &i = 0x7fff9f78
+calling foo: n-i = 1029, &i = 0x7fff9f60
+calling foo: n-i = 1030, &i = 0x7fff9f48
+calling foo: n-i = 1031, &i = 0x7fff9f30
+calling foo: n-i = 1032, &i = 0x7fff9f18
+calling foo: n-i = 1033, &i = 0x7fff9f00
+calling foo: n-i = 1034, &i = 0x7fff9ee8
+calling foo: n-i = 1035, &i = 0x7fff9ed0
+calling foo: n-i = 1036, &i = 0x7fff9eb8
+calling foo: n-i = 1037, &i = 0x7fff9ea0
+calling foo: n-i = 1038, &i = 0x7fff9e88
+calling foo: n-i = 1039, &i = 0x7fff9e70
+calling foo: n-i = 1040, &i = 0x7fff9e58
+calling foo: n-i = 1041, &i = 0x7fff9e40
+calling foo: n-i = 1042, &i = 0x7fff9e28
+calling foo: n-i = 1043, &i = 0x7fff9e10
+calling foo: n-i = 1044, &i = 0x7fff9df8
+calling foo: n-i = 1045, &i = 0x7fff9de0
+calling foo: n-i = 1046, &i = 0x7fff9dc8
+calling foo: n-i = 1047, &i = 0x7fff9db0
+calling foo: n-i = 1048, &i = 0x7fff9d98
+calling foo: n-i = 1049, &i = 0x7fff9d80
+calling foo: n-i = 1050, &i = 0x7fff9d68
+calling foo: n-i = 1051, &i = 0x7fff9d50
+calling foo: n-i = 1052, &i = 0x7fff9d38
+calling foo: n-i = 1053, &i = 0x7fff9d20
+calling foo: n-i = 1054, &i = 0x7fff9d08
+calling foo: n-i = 1055, &i = 0x7fff9cf0
+calling foo: n-i = 1056, &i = 0x7fff9cd8
+calling foo: n-i = 1057, &i = 0x7fff9cc0
+calling foo: n-i = 1058, &i = 0x7fff9ca8
+calling foo: n-i = 1059, &i = 0x7fff9c90
+calling foo: n-i = 1060, &i = 0x7fff9c78
+calling foo: n-i = 1061, &i = 0x7fff9c60
+calling foo: n-i = 1062, &i = 0x7fff9c48
+calling foo: n-i = 1063, &i = 0x7fff9c30
+calling foo: n-i = 1064, &i = 0x7fff9c18
+calling foo: n-i = 1065, &i = 0x7fff9c00
+calling foo: n-i = 1066, &i = 0x7fff9be8
+calling foo: n-i = 1067, &i = 0x7fff9bd0
+calling foo: n-i = 1068, &i = 0x7fff9bb8
+calling foo: n-i = 1069, &i = 0x7fff9ba0
+calling foo: n-i = 1070, &i = 0x7fff9b88
+calling foo: n-i = 1071, &i = 0x7fff9b70
+calling foo: n-i = 1072, &i = 0x7fff9b58
+calling foo: n-i = 1073, &i = 0x7fff9b40
+calling foo: n-i = 1074, &i = 0x7fff9b28
+calling foo: n-i = 1075, &i = 0x7fff9b10
+calling foo: n-i = 1076, &i = 0x7fff9af8
+calling foo: n-i = 1077, &i = 0x7fff9ae0
+calling foo: n-i = 1078, &i = 0x7fff9ac8
+calling foo: n-i = 1079, &i = 0x7fff9ab0
+calling foo: n-i = 1080, &i = 0x7fff9a98
+calling foo: n-i = 1081, &i = 0x7fff9a80
+calling foo: n-i = 1082, &i = 0x7fff9a68
+calling foo: n-i = 1083, &i = 0x7fff9a50
+calling foo: n-i = 1084, &i = 0x7fff9a38
+calling foo: n-i = 1085, &i = 0x7fff9a20
+calling foo: n-i = 1086, &i = 0x7fff9a08
+calling foo: n-i = 1087, &i = 0x7fff99f0
+calling foo: n-i = 1088, &i = 0x7fff99d8
+calling foo: n-i = 1089, &i = 0x7fff99c0
+calling foo: n-i = 1090, &i = 0x7fff99a8
+calling foo: n-i = 1091, &i = 0x7fff9990
+calling foo: n-i = 1092, &i = 0x7fff9978
+calling foo: n-i = 1093, &i = 0x7fff9960
+calling foo: n-i = 1094, &i = 0x7fff9948
+calling foo: n-i = 1095, &i = 0x7fff9930
+calling foo: n-i = 1096, &i = 0x7fff9918
+calling foo: n-i = 1097, &i = 0x7fff9900
+calling foo: n-i = 1098, &i = 0x7fff98e8
+calling foo: n-i = 1099, &i = 0x7fff98d0
+calling foo: n-i = 1100, &i = 0x7fff98b8
+calling foo: n-i = 1101, &i = 0x7fff98a0
+calling foo: n-i = 1102, &i = 0x7fff9888
+calling foo: n-i = 1103, &i = 0x7fff9870
+calling foo: n-i = 1104, &i = 0x7fff9858
+calling foo: n-i = 1105, &i = 0x7fff9840
+calling foo: n-i = 1106, &i = 0x7fff9828
+calling foo: n-i = 1107, &i = 0x7fff9810
+calling foo: n-i = 1108, &i = 0x7fff97f8
+calling foo: n-i = 1109, &i = 0x7fff97e0
+calling foo: n-i = 1110, &i = 0x7fff97c8
+calling foo: n-i = 1111, &i = 0x7fff97b0
+calling foo: n-i = 1112, &i = 0x7fff9798
+calling foo: n-i = 1113, &i = 0x7fff9780
+calling foo: n-i = 1114, &i = 0x7fff9768
+calling foo: n-i = 1115, &i = 0x7fff9750
+calling foo: n-i = 1116, &i = 0x7fff9738
+calling foo: n-i = 1117, &i = 0x7fff9720
+calling foo: n-i = 1118, &i = 0x7fff9708
+calling foo: n-i = 1119, &i = 0x7fff96f0
+calling foo: n-i = 1120, &i = 0x7fff96d8
+calling foo: n-i = 1121, &i = 0x7fff96c0
+calling foo: n-i = 1122, &i = 0x7fff96a8
+calling foo: n-i = 1123, &i = 0x7fff9690
+calling foo: n-i = 1124, &i = 0x7fff9678
+calling foo: n-i = 1125, &i = 0x7fff9660
+calling foo: n-i = 1126, &i = 0x7fff9648
+calling foo: n-i = 1127, &i = 0x7fff9630
+calling foo: n-i = 1128, &i = 0x7fff9618
+calling foo: n-i = 1129, &i = 0x7fff9600
+calling foo: n-i = 1130, &i = 0x7fff95e8
+calling foo: n-i = 1131, &i = 0x7fff95d0
+calling foo: n-i = 1132, &i = 0x7fff95b8
+calling foo: n-i = 1133, &i = 0x7fff95a0
+calling foo: n-i = 1134, &i = 0x7fff9588
+calling foo: n-i = 1135, &i = 0x7fff9570
+calling foo: n-i = 1136, &i = 0x7fff9558
+calling foo: n-i = 1137, &i = 0x7fff9540
+calling foo: n-i = 1138, &i = 0x7fff9528
+calling foo: n-i = 1139, &i = 0x7fff9510
+calling foo: n-i = 1140, &i = 0x7fff94f8
+calling foo: n-i = 1141, &i = 0x7fff94e0
+calling foo: n-i = 1142, &i = 0x7fff94c8
+calling foo: n-i = 1143, &i = 0x7fff94b0
+calling foo: n-i = 1144, &i = 0x7fff9498
+calling foo: n-i = 1145, &i = 0x7fff9480
+calling foo: n-i = 1146, &i = 0x7fff9468
+calling foo: n-i = 1147, &i = 0x7fff9450
+calling foo: n-i = 1148, &i = 0x7fff9438
+calling foo: n-i = 1149, &i = 0x7fff9420
+calling foo: n-i = 1150, &i = 0x7fff9408
+calling foo: n-i = 1151, &i = 0x7fff93f0
+calling foo: n-i = 1152, &i = 0x7fff93d8
+calling foo: n-i = 1153, &i = 0x7fff93c0
+calling foo: n-i = 1154, &i = 0x7fff93a8
+calling foo: n-i = 1155, &i = 0x7fff9390
+calling foo: n-i = 1156, &i = 0x7fff9378
+calling foo: n-i = 1157, &i = 0x7fff9360
+calling foo: n-i = 1158, &i = 0x7fff9348
+calling foo: n-i = 1159, &i = 0x7fff9330
+calling foo: n-i = 1160, &i = 0x7fff9318
+calling foo: n-i = 1161, &i = 0x7fff9300
+calling foo: n-i = 1162, &i = 0x7fff92e8
+calling foo: n-i = 1163, &i = 0x7fff92d0
+calling foo: n-i = 1164, &i = 0x7fff92b8
+calling foo: n-i = 1165, &i = 0x7fff92a0
+calling foo: n-i = 1166, &i = 0x7fff9288
+calling foo: n-i = 1167, &i = 0x7fff9270
+calling foo: n-i = 1168, &i = 0x7fff9258
+calling foo: n-i = 1169, &i = 0x7fff9240
+calling foo: n-i = 1170, &i = 0x7fff9228
+calling foo: n-i = 1171, &i = 0x7fff9210
+calling foo: n-i = 1172, &i = 0x7fff91f8
+calling foo: n-i = 1173, &i = 0x7fff91e0
+calling foo: n-i = 1174, &i = 0x7fff91c8
+calling foo: n-i = 1175, &i = 0x7fff91b0
+calling foo: n-i = 1176, &i = 0x7fff9198
+calling foo: n-i = 1177, &i = 0x7fff9180
+calling foo: n-i = 1178, &i = 0x7fff9168
+calling foo: n-i = 1179, &i = 0x7fff9150
+calling foo: n-i = 1180, &i = 0x7fff9138
+calling foo: n-i = 1181, &i = 0x7fff9120
+calling foo: n-i = 1182, &i = 0x7fff9108
+calling foo: n-i = 1183, &i = 0x7fff90f0
+calling foo: n-i = 1184, &i = 0x7fff90d8
+calling foo: n-i = 1185, &i = 0x7fff90c0
+calling foo: n-i = 1186, &i = 0x7fff90a8
+calling foo: n-i = 1187, &i = 0x7fff9090
+calling foo: n-i = 1188, &i = 0x7fff9078
+calling foo: n-i = 1189, &i = 0x7fff9060
+calling foo: n-i = 1190, &i = 0x7fff9048
+calling foo: n-i = 1191, &i = 0x7fff9030
+calling foo: n-i = 1192, &i = 0x7fff9018
+calling foo: n-i = 1193, &i = 0x7fff9000
+calling foo: n-i = 1194, &i = 0x7fff8fe8
+calling foo: n-i = 1195, &i = 0x7fff8fd0
+calling foo: n-i = 1196, &i = 0x7fff8fb8
+calling foo: n-i = 1197, &i = 0x7fff8fa0
+calling foo: n-i = 1198, &i = 0x7fff8f88
+calling foo: n-i = 1199, &i = 0x7fff8f70
+calling foo: n-i = 1200, &i = 0x7fff8f58
+calling foo: n-i = 1201, &i = 0x7fff8f40
+calling foo: n-i = 1202, &i = 0x7fff8f28
+calling foo: n-i = 1203, &i = 0x7fff8f10
+calling foo: n-i = 1204, &i = 0x7fff8ef8
+calling foo: n-i = 1205, &i = 0x7fff8ee0
+calling foo: n-i = 1206, &i = 0x7fff8ec8
+calling foo: n-i = 1207, &i = 0x7fff8eb0
+calling foo: n-i = 1208, &i = 0x7fff8e98
+calling foo: n-i = 1209, &i = 0x7fff8e80
+calling foo: n-i = 1210, &i = 0x7fff8e68
+calling foo: n-i = 1211, &i = 0x7fff8e50
+calling foo: n-i = 1212, &i = 0x7fff8e38
+calling foo: n-i = 1213, &i = 0x7fff8e20
+calling foo: n-i = 1214, &i = 0x7fff8e08
+calling foo: n-i = 1215, &i = 0x7fff8df0
+calling foo: n-i = 1216, &i = 0x7fff8dd8
+calling foo: n-i = 1217, &i = 0x7fff8dc0
+calling foo: n-i = 1218, &i = 0x7fff8da8
+calling foo: n-i = 1219, &i = 0x7fff8d90
+calling foo: n-i = 1220, &i = 0x7fff8d78
+calling foo: n-i = 1221, &i = 0x7fff8d60
+calling foo: n-i = 1222, &i = 0x7fff8d48
+calling foo: n-i = 1223, &i = 0x7fff8d30
+calling foo: n-i = 1224, &i = 0x7fff8d18
+calling foo: n-i = 1225, &i = 0x7fff8d00
+calling foo: n-i = 1226, &i = 0x7fff8ce8
+calling foo: n-i = 1227, &i = 0x7fff8cd0
+calling foo: n-i = 1228, &i = 0x7fff8cb8
+calling foo: n-i = 1229, &i = 0x7fff8ca0
+calling foo: n-i = 1230, &i = 0x7fff8c88
+calling foo: n-i = 1231, &i = 0x7fff8c70
+calling foo: n-i = 1232, &i = 0x7fff8c58
+calling foo: n-i = 1233, &i = 0x7fff8c40
+calling foo: n-i = 1234, &i = 0x7fff8c28
+calling foo: n-i = 1235, &i = 0x7fff8c10
+calling foo: n-i = 1236, &i = 0x7fff8bf8
+calling foo: n-i = 1237, &i = 0x7fff8be0
+calling foo: n-i = 1238, &i = 0x7fff8bc8
+calling foo: n-i = 1239, &i = 0x7fff8bb0
+calling foo: n-i = 1240, &i = 0x7fff8b98
+calling foo: n-i = 1241, &i = 0x7fff8b80
+calling foo: n-i = 1242, &i = 0x7fff8b68
+calling foo: n-i = 1243, &i = 0x7fff8b50
+calling foo: n-i = 1244, &i = 0x7fff8b38
+calling foo: n-i = 1245, &i = 0x7fff8b20
+calling foo: n-i = 1246, &i = 0x7fff8b08
+calling foo: n-i = 1247, &i = 0x7fff8af0
+calling foo: n-i = 1248, &i = 0x7fff8ad8
+calling foo: n-i = 1249, &i = 0x7fff8ac0
+calling foo: n-i = 1250, &i = 0x7fff8aa8
+calling foo: n-i = 1251, &i = 0x7fff8a90
+calling foo: n-i = 1252, &i = 0x7fff8a78
+calling foo: n-i = 1253, &i = 0x7fff8a60
+calling foo: n-i = 1254, &i = 0x7fff8a48
+calling foo: n-i = 1255, &i = 0x7fff8a30
+calling foo: n-i = 1256, &i = 0x7fff8a18
+calling foo: n-i = 1257, &i = 0x7fff8a00
+calling foo: n-i = 1258, &i = 0x7fff89e8
+calling foo: n-i = 1259, &i = 0x7fff89d0
+calling foo: n-i = 1260, &i = 0x7fff89b8
+calling foo: n-i = 1261, &i = 0x7fff89a0
+calling foo: n-i = 1262, &i = 0x7fff8988
+calling foo: n-i = 1263, &i = 0x7fff8970
+calling foo: n-i = 1264, &i = 0x7fff8958
+calling foo: n-i = 1265, &i = 0x7fff8940
+calling foo: n-i = 1266, &i = 0x7fff8928
+calling foo: n-i = 1267, &i = 0x7fff8910
+calling foo: n-i = 1268, &i = 0x7fff88f8
+calling foo: n-i = 1269, &i = 0x7fff88e0
+calling foo: n-i = 1270, &i = 0x7fff88c8
+calling foo: n-i = 1271, &i = 0x7fff88b0
+calling foo: n-i = 1272, &i = 0x7fff8898
+calling foo: n-i = 1273, &i = 0x7fff8880
+calling foo: n-i = 1274, &i = 0x7fff8868
+calling foo: n-i = 1275, &i = 0x7fff8850
+calling foo: n-i = 1276, &i = 0x7fff8838
+calling foo: n-i = 1277, &i = 0x7fff8820
+calling foo: n-i = 1278, &i = 0x7fff8808
+calling foo: n-i = 1279, &i = 0x7fff87f0
+calling foo: n-i = 1280, &i = 0x7fff87d8
+calling foo: n-i = 1281, &i = 0x7fff87c0
+calling foo: n-i = 1282, &i = 0x7fff87a8
+calling foo: n-i = 1283, &i = 0x7fff8790
+calling foo: n-i = 1284, &i = 0x7fff8778
+calling foo: n-i = 1285, &i = 0x7fff8760
+calling foo: n-i = 1286, &i = 0x7fff8748
+calling foo: n-i = 1287, &i = 0x7fff8730
+calling foo: n-i = 1288, &i = 0x7fff8718
+calling foo: n-i = 1289, &i = 0x7fff8700
+calling foo: n-i = 1290, &i = 0x7fff86e8
+calling foo: n-i = 1291, &i = 0x7fff86d0
+calling foo: n-i = 1292, &i = 0x7fff86b8
+calling foo: n-i = 1293, &i = 0x7fff86a0
+calling foo: n-i = 1294, &i = 0x7fff8688
+calling foo: n-i = 1295, &i = 0x7fff8670
+calling foo: n-i = 1296, &i = 0x7fff8658
+calling foo: n-i = 1297, &i = 0x7fff8640
+calling foo: n-i = 1298, &i = 0x7fff8628
+calling foo: n-i = 1299, &i = 0x7fff8610
+calling foo: n-i = 1300, &i = 0x7fff85f8
+calling foo: n-i = 1301, &i = 0x7fff85e0
+calling foo: n-i = 1302, &i = 0x7fff85c8
+calling foo: n-i = 1303, &i = 0x7fff85b0
+calling foo: n-i = 1304, &i = 0x7fff8598
+calling foo: n-i = 1305, &i = 0x7fff8580
+calling foo: n-i = 1306, &i = 0x7fff8568
+calling foo: n-i = 1307, &i = 0x7fff8550
+calling foo: n-i = 1308, &i = 0x7fff8538
+calling foo: n-i = 1309, &i = 0x7fff8520
+calling foo: n-i = 1310, &i = 0x7fff8508
+calling foo: n-i = 1311, &i = 0x7fff84f0
+calling foo: n-i = 1312, &i = 0x7fff84d8
+calling foo: n-i = 1313, &i = 0x7fff84c0
+calling foo: n-i = 1314, &i = 0x7fff84a8
+calling foo: n-i = 1315, &i = 0x7fff8490
+calling foo: n-i = 1316, &i = 0x7fff8478
+calling foo: n-i = 1317, &i = 0x7fff8460
+calling foo: n-i = 1318, &i = 0x7fff8448
+calling foo: n-i = 1319, &i = 0x7fff8430
+calling foo: n-i = 1320, &i = 0x7fff8418
+calling foo: n-i = 1321, &i = 0x7fff8400
+calling foo: n-i = 1322, &i = 0x7fff83e8
+calling foo: n-i = 1323, &i = 0x7fff83d0
+calling foo: n-i = 1324, &i = 0x7fff83b8
+calling foo: n-i = 1325, &i = 0x7fff83a0
+calling foo: n-i = 1326, &i = 0x7fff8388
+calling foo: n-i = 1327, &i = 0x7fff8370
+calling foo: n-i = 1328, &i = 0x7fff8358
+calling foo: n-i = 1329, &i = 0x7fff8340
+calling foo: n-i = 1330, &i = 0x7fff8328
+calling foo: n-i = 1331, &i = 0x7fff8310
+calling foo: n-i = 1332, &i = 0x7fff82f8
+calling foo: n-i = 1333, &i = 0x7fff82e0
+calling foo: n-i = 1334, &i = 0x7fff82c8
+calling foo: n-i = 1335, &i = 0x7fff82b0
+calling foo: n-i = 1336, &i = 0x7fff8298
+calling foo: n-i = 1337, &i = 0x7fff8280
+calling foo: n-i = 1338, &i = 0x7fff8268
+calling foo: n-i = 1339, &i = 0x7fff8250
+calling foo: n-i = 1340, &i = 0x7fff8238
+calling foo: n-i = 1341, &i = 0x7fff8220
+calling foo: n-i = 1342, &i = 0x7fff8208
+calling foo: n-i = 1343, &i = 0x7fff81f0
+calling foo: n-i = 1344, &i = 0x7fff81d8
+calling foo: n-i = 1345, &i = 0x7fff81c0
+calling foo: n-i = 1346, &i = 0x7fff81a8
+calling foo: n-i = 1347, &i = 0x7fff8190
+calling foo: n-i = 1348, &i = 0x7fff8178
+calling foo: n-i = 1349, &i = 0x7fff8160
+calling foo: n-i = 1350, &i = 0x7fff8148
+calling foo: n-i = 1351, &i = 0x7fff8130
+calling foo: n-i = 1352, &i = 0x7fff8118
+calling foo: n-i = 1353, &i = 0x7fff8100
+calling foo: n-i = 1354, &i = 0x7fff80e8
+calling foo: n-i = 1355, &i = 0x7fff80d0
+calling foo: n-i = 1356, &i = 0x7fff80b8
+calling foo: n-i = 1357, &i = 0x7fff80a0
+calling foo: n-i = 1358, &i = 0x7fff8088
+calling foo: n-i = 1359, &i = 0x7fff8070
+calling foo: n-i = 1360, &i = 0x7fff8058
+calling foo: n-i = 1361, &i = 0x7fff8040
+calling foo: n-i = 1362, &i = 0x7fff8028
+calling foo: n-i = 1363, &i = 0x7fff8010
+calling foo: n-i = 1364, &i = 0x7fff7ff8
+calling foo: n-i = 1365, &i = 0x7fff7fe0
+calling foo: n-i = 1366, &i = 0x7fff7fc8
+calling foo: n-i = 1367, &i = 0x7fff7fb0
+calling foo: n-i = 1368, &i = 0x7fff7f98
+calling foo: n-i = 1369, &i = 0x7fff7f80
+calling foo: n-i = 1370, &i = 0x7fff7f68
+calling foo: n-i = 1371, &i = 0x7fff7f50
+calling foo: n-i = 1372, &i = 0x7fff7f38
+calling foo: n-i = 1373, &i = 0x7fff7f20
+calling foo: n-i = 1374, &i = 0x7fff7f08
+calling foo: n-i = 1375, &i = 0x7fff7ef0
+calling foo: n-i = 1376, &i = 0x7fff7ed8
+calling foo: n-i = 1377, &i = 0x7fff7ec0
+calling foo: n-i = 1378, &i = 0x7fff7ea8
+calling foo: n-i = 1379, &i = 0x7fff7e90
+calling foo: n-i = 1380, &i = 0x7fff7e78
+calling foo: n-i = 1381, &i = 0x7fff7e60
+calling foo: n-i = 1382, &i = 0x7fff7e48
+calling foo: n-i = 1383, &i = 0x7fff7e30
+calling foo: n-i = 1384, &i = 0x7fff7e18
+calling foo: n-i = 1385, &i = 0x7fff7e00
+calling foo: n-i = 1386, &i = 0x7fff7de8
+calling foo: n-i = 1387, &i = 0x7fff7dd0
+calling foo: n-i = 1388, &i = 0x7fff7db8
+calling foo: n-i = 1389, &i = 0x7fff7da0
+calling foo: n-i = 1390, &i = 0x7fff7d88
+calling foo: n-i = 1391, &i = 0x7fff7d70
+calling foo: n-i = 1392, &i = 0x7fff7d58
+calling foo: n-i = 1393, &i = 0x7fff7d40
+calling foo: n-i = 1394, &i = 0x7fff7d28
+calling foo: n-i = 1395, &i = 0x7fff7d10
+calling foo: n-i = 1396, &i = 0x7fff7cf8
+calling foo: n-i = 1397, &i = 0x7fff7ce0
+calling foo: n-i = 1398, &i = 0x7fff7cc8
+calling foo: n-i = 1399, &i = 0x7fff7cb0
+calling foo: n-i = 1400, &i = 0x7fff7c98
+calling foo: n-i = 1401, &i = 0x7fff7c80
+calling foo: n-i = 1402, &i = 0x7fff7c68
+calling foo: n-i = 1403, &i = 0x7fff7c50
+calling foo: n-i = 1404, &i = 0x7fff7c38
+calling foo: n-i = 1405, &i = 0x7fff7c20
+calling foo: n-i = 1406, &i = 0x7fff7c08
+calling foo: n-i = 1407, &i = 0x7fff7bf0
+calling foo: n-i = 1408, &i = 0x7fff7bd8
+calling foo: n-i = 1409, &i = 0x7fff7bc0
+calling foo: n-i = 1410, &i = 0x7fff7ba8
+calling foo: n-i = 1411, &i = 0x7fff7b90
+calling foo: n-i = 1412, &i = 0x7fff7b78
+calling foo: n-i = 1413, &i = 0x7fff7b60
+calling foo: n-i = 1414, &i = 0x7fff7b48
+calling foo: n-i = 1415, &i = 0x7fff7b30
+calling foo: n-i = 1416, &i = 0x7fff7b18
+calling foo: n-i = 1417, &i = 0x7fff7b00
+calling foo: n-i = 1418, &i = 0x7fff7ae8
+calling foo: n-i = 1419, &i = 0x7fff7ad0
+calling foo: n-i = 1420, &i = 0x7fff7ab8
+calling foo: n-i = 1421, &i = 0x7fff7aa0
+calling foo: n-i = 1422, &i = 0x7fff7a88
+calling foo: n-i = 1423, &i = 0x7fff7a70
+calling foo: n-i = 1424, &i = 0x7fff7a58
+calling foo: n-i = 1425, &i = 0x7fff7a40
+calling foo: n-i = 1426, &i = 0x7fff7a28
+calling foo: n-i = 1427, &i = 0x7fff7a10
+calling foo: n-i = 1428, &i = 0x7fff79f8
+calling foo: n-i = 1429, &i = 0x7fff79e0
+calling foo: n-i = 1430, &i = 0x7fff79c8
+calling foo: n-i = 1431, &i = 0x7fff79b0
+calling foo: n-i = 1432, &i = 0x7fff7998
+calling foo: n-i = 1433, &i = 0x7fff7980
+calling foo: n-i = 1434, &i = 0x7fff7968
+calling foo: n-i = 1435, &i = 0x7fff7950
+calling foo: n-i = 1436, &i = 0x7fff7938
+calling foo: n-i = 1437, &i = 0x7fff7920
+calling foo: n-i = 1438, &i = 0x7fff7908
+calling foo: n-i = 1439, &i = 0x7fff78f0
+calling foo: n-i = 1440, &i = 0x7fff78d8
+calling foo: n-i = 1441, &i = 0x7fff78c0
+calling foo: n-i = 1442, &i = 0x7fff78a8
+calling foo: n-i = 1443, &i = 0x7fff7890
+calling foo: n-i = 1444, &i = 0x7fff7878
+calling foo: n-i = 1445, &i = 0x7fff7860
+calling foo: n-i = 1446, &i = 0x7fff7848
+calling foo: n-i = 1447, &i = 0x7fff7830
+calling foo: n-i = 1448, &i = 0x7fff7818
+calling foo: n-i = 1449, &i = 0x7fff7800
+calling foo: n-i = 1450, &i = 0x7fff77e8
+calling foo: n-i = 1451, &i = 0x7fff77d0
+calling foo: n-i = 1452, &i = 0x7fff77b8
+calling foo: n-i = 1453, &i = 0x7fff77a0
+calling foo: n-i = 1454, &i = 0x7fff7788
+calling foo: n-i = 1455, &i = 0x7fff7770
+calling foo: n-i = 1456, &i = 0x7fff7758
+calling foo: n-i = 1457, &i = 0x7fff7740
+calling foo: n-i = 1458, &i = 0x7fff7728
+calling foo: n-i = 1459, &i = 0x7fff7710
+calling foo: n-i = 1460, &i = 0x7fff76f8
+calling foo: n-i = 1461, &i = 0x7fff76e0
+calling foo: n-i = 1462, &i = 0x7fff76c8
+calling foo: n-i = 1463, &i = 0x7fff76b0
+calling foo: n-i = 1464, &i = 0x7fff7698
+calling foo: n-i = 1465, &i = 0x7fff7680
+calling foo: n-i = 1466, &i = 0x7fff7668
+calling foo: n-i = 1467, &i = 0x7fff7650
+calling foo: n-i = 1468, &i = 0x7fff7638
+calling foo: n-i = 1469, &i = 0x7fff7620
+calling foo: n-i = 1470, &i = 0x7fff7608
+calling foo: n-i = 1471, &i = 0x7fff75f0
+calling foo: n-i = 1472, &i = 0x7fff75d8
+calling foo: n-i = 1473, &i = 0x7fff75c0
+calling foo: n-i = 1474, &i = 0x7fff75a8
+calling foo: n-i = 1475, &i = 0x7fff7590
+calling foo: n-i = 1476, &i = 0x7fff7578
+calling foo: n-i = 1477, &i = 0x7fff7560
+calling foo: n-i = 1478, &i = 0x7fff7548
+calling foo: n-i = 1479, &i = 0x7fff7530
+calling foo: n-i = 1480, &i = 0x7fff7518
+calling foo: n-i = 1481, &i = 0x7fff7500
+calling foo: n-i = 1482, &i = 0x7fff74e8
+calling foo: n-i = 1483, &i = 0x7fff74d0
+calling foo: n-i = 1484, &i = 0x7fff74b8
+calling foo: n-i = 1485, &i = 0x7fff74a0
+calling foo: n-i = 1486, &i = 0x7fff7488
+calling foo: n-i = 1487, &i = 0x7fff7470
+calling foo: n-i = 1488, &i = 0x7fff7458
+calling foo: n-i = 1489, &i = 0x7fff7440
+calling foo: n-i = 1490, &i = 0x7fff7428
+calling foo: n-i = 1491, &i = 0x7fff7410
+calling foo: n-i = 1492, &i = 0x7fff73f8
+calling foo: n-i = 1493, &i = 0x7fff73e0
+calling foo: n-i = 1494, &i = 0x7fff73c8
+calling foo: n-i = 1495, &i = 0x7fff73b0
+calling foo: n-i = 1496, &i = 0x7fff7398
+calling foo: n-i = 1497, &i = 0x7fff7380
+calling foo: n-i = 1498, &i = 0x7fff7368
+calling foo: n-i = 1499, &i = 0x7fff7350
+calling foo: n-i = 1500, &i = 0x7fff7338
+calling foo: n-i = 1501, &i = 0x7fff7320
+calling foo: n-i = 1502, &i = 0x7fff7308
+calling foo: n-i = 1503, &i = 0x7fff72f0
+calling foo: n-i = 1504, &i = 0x7fff72d8
+calling foo: n-i = 1505, &i = 0x7fff72c0
+calling foo: n-i = 1506, &i = 0x7fff72a8
+calling foo: n-i = 1507, &i = 0x7fff7290
+calling foo: n-i = 1508, &i = 0x7fff7278
+calling foo: n-i = 1509, &i = 0x7fff7260
+calling foo: n-i = 1510, &i = 0x7fff7248
+calling foo: n-i = 1511, &i = 0x7fff7230
+calling foo: n-i = 1512, &i = 0x7fff7218
+calling foo: n-i = 1513, &i = 0x7fff7200
+calling foo: n-i = 1514, &i = 0x7fff71e8
+calling foo: n-i = 1515, &i = 0x7fff71d0
+calling foo: n-i = 1516, &i = 0x7fff71b8
+calling foo: n-i = 1517, &i = 0x7fff71a0
+calling foo: n-i = 1518, &i = 0x7fff7188
+calling foo: n-i = 1519, &i = 0x7fff7170
+calling foo: n-i = 1520, &i = 0x7fff7158
+calling foo: n-i = 1521, &i = 0x7fff7140
+calling foo: n-i = 1522, &i = 0x7fff7128
+calling foo: n-i = 1523, &i = 0x7fff7110
+calling foo: n-i = 1524, &i = 0x7fff70f8
+calling foo: n-i = 1525, &i = 0x7fff70e0
+calling foo: n-i = 1526, &i = 0x7fff70c8
+calling foo: n-i = 1527, &i = 0x7fff70b0
+calling foo: n-i = 1528, &i = 0x7fff7098
+calling foo: n-i = 1529, &i = 0x7fff7080
+calling foo: n-i = 1530, &i = 0x7fff7068
+calling foo: n-i = 1531, &i = 0x7fff7050
+calling foo: n-i = 1532, &i = 0x7fff7038
+calling foo: n-i = 1533, &i = 0x7fff7020
+calling foo: n-i = 1534, &i = 0x7fff7008
+calling foo: n-i = 1535, &i = 0x7fff6ff0
+calling foo: n-i = 1536, &i = 0x7fff6fd8
+calling foo: n-i = 1537, &i = 0x7fff6fc0
+calling foo: n-i = 1538, &i = 0x7fff6fa8
+calling foo: n-i = 1539, &i = 0x7fff6f90
+calling foo: n-i = 1540, &i = 0x7fff6f78
+calling foo: n-i = 1541, &i = 0x7fff6f60
+calling foo: n-i = 1542, &i = 0x7fff6f48
+calling foo: n-i = 1543, &i = 0x7fff6f30
+calling foo: n-i = 1544, &i = 0x7fff6f18
+calling foo: n-i = 1545, &i = 0x7fff6f00
+calling foo: n-i = 1546, &i = 0x7fff6ee8
+calling foo: n-i = 1547, &i = 0x7fff6ed0
+calling foo: n-i = 1548, &i = 0x7fff6eb8
+calling foo: n-i = 1549, &i = 0x7fff6ea0
+calling foo: n-i = 1550, &i = 0x7fff6e88
+calling foo: n-i = 1551, &i = 0x7fff6e70
+calling foo: n-i = 1552, &i = 0x7fff6e58
+calling foo: n-i = 1553, &i = 0x7fff6e40
+calling foo: n-i = 1554, &i = 0x7fff6e28
+calling foo: n-i = 1555, &i = 0x7fff6e10
+calling foo: n-i = 1556, &i = 0x7fff6df8
+calling foo: n-i = 1557, &i = 0x7fff6de0
+calling foo: n-i = 1558, &i = 0x7fff6dc8
+calling foo: n-i = 1559, &i = 0x7fff6db0
+calling foo: n-i = 1560, &i = 0x7fff6d98
+calling foo: n-i = 1561, &i = 0x7fff6d80
+calling foo: n-i = 1562, &i = 0x7fff6d68
+calling foo: n-i = 1563, &i = 0x7fff6d50
+calling foo: n-i = 1564, &i = 0x7fff6d38
+calling foo: n-i = 1565, &i = 0x7fff6d20
+calling foo: n-i = 1566, &i = 0x7fff6d08
+calling foo: n-i = 1567, &i = 0x7fff6cf0
+calling foo: n-i = 1568, &i = 0x7fff6cd8
+calling foo: n-i = 1569, &i = 0x7fff6cc0
+calling foo: n-i = 1570, &i = 0x7fff6ca8
+calling foo: n-i = 1571, &i = 0x7fff6c90
+calling foo: n-i = 1572, &i = 0x7fff6c78
+calling foo: n-i = 1573, &i = 0x7fff6c60
+calling foo: n-i = 1574, &i = 0x7fff6c48
+calling foo: n-i = 1575, &i = 0x7fff6c30
+calling foo: n-i = 1576, &i = 0x7fff6c18
+calling foo: n-i = 1577, &i = 0x7fff6c00
+calling foo: n-i = 1578, &i = 0x7fff6be8
+calling foo: n-i = 1579, &i = 0x7fff6bd0
+calling foo: n-i = 1580, &i = 0x7fff6bb8
+calling foo: n-i = 1581, &i = 0x7fff6ba0
+calling foo: n-i = 1582, &i = 0x7fff6b88
+calling foo: n-i = 1583, &i = 0x7fff6b70
+calling foo: n-i = 1584, &i = 0x7fff6b58
+calling foo: n-i = 1585, &i = 0x7fff6b40
+calling foo: n-i = 1586, &i = 0x7fff6b28
+calling foo: n-i = 1587, &i = 0x7fff6b10
+calling foo: n-i = 1588, &i = 0x7fff6af8
+calling foo: n-i = 1589, &i = 0x7fff6ae0
+calling foo: n-i = 1590, &i = 0x7fff6ac8
+calling foo: n-i = 1591, &i = 0x7fff6ab0
+calling foo: n-i = 1592, &i = 0x7fff6a98
+calling foo: n-i = 1593, &i = 0x7fff6a80
+calling foo: n-i = 1594, &i = 0x7fff6a68
+calling foo: n-i = 1595, &i = 0x7fff6a50
+calling foo: n-i = 1596, &i = 0x7fff6a38
+calling foo: n-i = 1597, &i = 0x7fff6a20
+calling foo: n-i = 1598, &i = 0x7fff6a08
+calling foo: n-i = 1599, &i = 0x7fff69f0
+calling foo: n-i = 1600, &i = 0x7fff69d8
+calling foo: n-i = 1601, &i = 0x7fff69c0
+calling foo: n-i = 1602, &i = 0x7fff69a8
+calling foo: n-i = 1603, &i = 0x7fff6990
+calling foo: n-i = 1604, &i = 0x7fff6978
+calling foo: n-i = 1605, &i = 0x7fff6960
+calling foo: n-i = 1606, &i = 0x7fff6948
+calling foo: n-i = 1607, &i = 0x7fff6930
+calling foo: n-i = 1608, &i = 0x7fff6918
+calling foo: n-i = 1609, &i = 0x7fff6900
+calling foo: n-i = 1610, &i = 0x7fff68e8
+calling foo: n-i = 1611, &i = 0x7fff68d0
+calling foo: n-i = 1612, &i = 0x7fff68b8
+calling foo: n-i = 1613, &i = 0x7fff68a0
+calling foo: n-i = 1614, &i = 0x7fff6888
+calling foo: n-i = 1615, &i = 0x7fff6870
+calling foo: n-i = 1616, &i = 0x7fff6858
+calling foo: n-i = 1617, &i = 0x7fff6840
+calling foo: n-i = 1618, &i = 0x7fff6828
+calling foo: n-i = 1619, &i = 0x7fff6810
+calling foo: n-i = 1620, &i = 0x7fff67f8
+calling foo: n-i = 1621, &i = 0x7fff67e0
+calling foo: n-i = 1622, &i = 0x7fff67c8
+calling foo: n-i = 1623, &i = 0x7fff67b0
+calling foo: n-i = 1624, &i = 0x7fff6798
+calling foo: n-i = 1625, &i = 0x7fff6780
+calling foo: n-i = 1626, &i = 0x7fff6768
+calling foo: n-i = 1627, &i = 0x7fff6750
+calling foo: n-i = 1628, &i = 0x7fff6738
+calling foo: n-i = 1629, &i = 0x7fff6720
+calling foo: n-i = 1630, &i = 0x7fff6708
+calling foo: n-i = 1631, &i = 0x7fff66f0
+calling foo: n-i = 1632, &i = 0x7fff66d8
+calling foo: n-i = 1633, &i = 0x7fff66c0
+calling foo: n-i = 1634, &i = 0x7fff66a8
+calling foo: n-i = 1635, &i = 0x7fff6690
+calling foo: n-i = 1636, &i = 0x7fff6678
+calling foo: n-i = 1637, &i = 0x7fff6660
+calling foo: n-i = 1638, &i = 0x7fff6648
+calling foo: n-i = 1639, &i = 0x7fff6630
+calling foo: n-i = 1640, &i = 0x7fff6618
+calling foo: n-i = 1641, &i = 0x7fff6600
+calling foo: n-i = 1642, &i = 0x7fff65e8
+calling foo: n-i = 1643, &i = 0x7fff65d0
+calling foo: n-i = 1644, &i = 0x7fff65b8
+calling foo: n-i = 1645, &i = 0x7fff65a0
+calling foo: n-i = 1646, &i = 0x7fff6588
+calling foo: n-i = 1647, &i = 0x7fff6570
+calling foo: n-i = 1648, &i = 0x7fff6558
+calling foo: n-i = 1649, &i = 0x7fff6540
+calling foo: n-i = 1650, &i = 0x7fff6528
+calling foo: n-i = 1651, &i = 0x7fff6510
+calling foo: n-i = 1652, &i = 0x7fff64f8
+calling foo: n-i = 1653, &i = 0x7fff64e0
+calling foo: n-i = 1654, &i = 0x7fff64c8
+calling foo: n-i = 1655, &i = 0x7fff64b0
+calling foo: n-i = 1656, &i = 0x7fff6498
+calling foo: n-i = 1657, &i = 0x7fff6480
+calling foo: n-i = 1658, &i = 0x7fff6468
+calling foo: n-i = 1659, &i = 0x7fff6450
+calling foo: n-i = 1660, &i = 0x7fff6438
+calling foo: n-i = 1661, &i = 0x7fff6420
+calling foo: n-i = 1662, &i = 0x7fff6408
+calling foo: n-i = 1663, &i = 0x7fff63f0
+calling foo: n-i = 1664, &i = 0x7fff63d8
+calling foo: n-i = 1665, &i = 0x7fff63c0
+calling foo: n-i = 1666, &i = 0x7fff63a8
+calling foo: n-i = 1667, &i = 0x7fff6390
+calling foo: n-i = 1668, &i = 0x7fff6378
+calling foo: n-i = 1669, &i = 0x7fff6360
+calling foo: n-i = 1670, &i = 0x7fff6348
+calling foo: n-i = 1671, &i = 0x7fff6330
+calling foo: n-i = 1672, &i = 0x7fff6318
+calling foo: n-i = 1673, &i = 0x7fff6300
+calling foo: n-i = 1674, &i = 0x7fff62e8
+calling foo: n-i = 1675, &i = 0x7fff62d0
+calling foo: n-i = 1676, &i = 0x7fff62b8
+calling foo: n-i = 1677, &i = 0x7fff62a0
+calling foo: n-i = 1678, &i = 0x7fff6288
+calling foo: n-i = 1679, &i = 0x7fff6270
+calling foo: n-i = 1680, &i = 0x7fff6258
+calling foo: n-i = 1681, &i = 0x7fff6240
+calling foo: n-i = 1682, &i = 0x7fff6228
+calling foo: n-i = 1683, &i = 0x7fff6210
+calling foo: n-i = 1684, &i = 0x7fff61f8
+calling foo: n-i = 1685, &i = 0x7fff61e0
+calling foo: n-i = 1686, &i = 0x7fff61c8
+calling foo: n-i = 1687, &i = 0x7fff61b0
+calling foo: n-i = 1688, &i = 0x7fff6198
+calling foo: n-i = 1689, &i = 0x7fff6180
+calling foo: n-i = 1690, &i = 0x7fff6168
+calling foo: n-i = 1691, &i = 0x7fff6150
+calling foo: n-i = 1692, &i = 0x7fff6138
+calling foo: n-i = 1693, &i = 0x7fff6120
+calling foo: n-i = 1694, &i = 0x7fff6108
+calling foo: n-i = 1695, &i = 0x7fff60f0
+calling foo: n-i = 1696, &i = 0x7fff60d8
+calling foo: n-i = 1697, &i = 0x7fff60c0
+calling foo: n-i = 1698, &i = 0x7fff60a8
+calling foo: n-i = 1699, &i = 0x7fff6090
+calling foo: n-i = 1700, &i = 0x7fff6078
+calling foo: n-i = 1701, &i = 0x7fff6060
+calling foo: n-i = 1702, &i = 0x7fff6048
+calling foo: n-i = 1703, &i = 0x7fff6030
+calling foo: n-i = 1704, &i = 0x7fff6018
+calling foo: n-i = 1705, &i = 0x7fff6000
+calling foo: n-i = 1706, &i = 0x7fff5fe8
+calling foo: n-i = 1707, &i = 0x7fff5fd0
+calling foo: n-i = 1708, &i = 0x7fff5fb8
+calling foo: n-i = 1709, &i = 0x7fff5fa0
+calling foo: n-i = 1710, &i = 0x7fff5f88
+calling foo: n-i = 1711, &i = 0x7fff5f70
+calling foo: n-i = 1712, &i = 0x7fff5f58
+calling foo: n-i = 1713, &i = 0x7fff5f40
+calling foo: n-i = 1714, &i = 0x7fff5f28
+calling foo: n-i = 1715, &i = 0x7fff5f10
+calling foo: n-i = 1716, &i = 0x7fff5ef8
+calling foo: n-i = 1717, &i = 0x7fff5ee0
+calling foo: n-i = 1718, &i = 0x7fff5ec8
+calling foo: n-i = 1719, &i = 0x7fff5eb0
+calling foo: n-i = 1720, &i = 0x7fff5e98
+calling foo: n-i = 1721, &i = 0x7fff5e80
+calling foo: n-i = 1722, &i = 0x7fff5e68
+calling foo: n-i = 1723, &i = 0x7fff5e50
+calling foo: n-i = 1724, &i = 0x7fff5e38
+calling foo: n-i = 1725, &i = 0x7fff5e20
+calling foo: n-i = 1726, &i = 0x7fff5e08
+calling foo: n-i = 1727, &i = 0x7fff5df0
+calling foo: n-i = 1728, &i = 0x7fff5dd8
+calling foo: n-i = 1729, &i = 0x7fff5dc0
+calling foo: n-i = 1730, &i = 0x7fff5da8
+calling foo: n-i = 1731, &i = 0x7fff5d90
+calling foo: n-i = 1732, &i = 0x7fff5d78
+calling foo: n-i = 1733, &i = 0x7fff5d60
+calling foo: n-i = 1734, &i = 0x7fff5d48
+calling foo: n-i = 1735, &i = 0x7fff5d30
+calling foo: n-i = 1736, &i = 0x7fff5d18
+calling foo: n-i = 1737, &i = 0x7fff5d00
+calling foo: n-i = 1738, &i = 0x7fff5ce8
+calling foo: n-i = 1739, &i = 0x7fff5cd0
+calling foo: n-i = 1740, &i = 0x7fff5cb8
+calling foo: n-i = 1741, &i = 0x7fff5ca0
+calling foo: n-i = 1742, &i = 0x7fff5c88
+calling foo: n-i = 1743, &i = 0x7fff5c70
+calling foo: n-i = 1744, &i = 0x7fff5c58
+calling foo: n-i = 1745, &i = 0x7fff5c40
+calling foo: n-i = 1746, &i = 0x7fff5c28
+calling foo: n-i = 1747, &i = 0x7fff5c10
+calling foo: n-i = 1748, &i = 0x7fff5bf8
+calling foo: n-i = 1749, &i = 0x7fff5be0
+calling foo: n-i = 1750, &i = 0x7fff5bc8
+calling foo: n-i = 1751, &i = 0x7fff5bb0
+calling foo: n-i = 1752, &i = 0x7fff5b98
+calling foo: n-i = 1753, &i = 0x7fff5b80
+calling foo: n-i = 1754, &i = 0x7fff5b68
+calling foo: n-i = 1755, &i = 0x7fff5b50
+calling foo: n-i = 1756, &i = 0x7fff5b38
+calling foo: n-i = 1757, &i = 0x7fff5b20
+calling foo: n-i = 1758, &i = 0x7fff5b08
+calling foo: n-i = 1759, &i = 0x7fff5af0
+calling foo: n-i = 1760, &i = 0x7fff5ad8
+calling foo: n-i = 1761, &i = 0x7fff5ac0
+calling foo: n-i = 1762, &i = 0x7fff5aa8
+calling foo: n-i = 1763, &i = 0x7fff5a90
+calling foo: n-i = 1764, &i = 0x7fff5a78
+calling foo: n-i = 1765, &i = 0x7fff5a60
+calling foo: n-i = 1766, &i = 0x7fff5a48
+calling foo: n-i = 1767, &i = 0x7fff5a30
+calling foo: n-i = 1768, &i = 0x7fff5a18
+calling foo: n-i = 1769, &i = 0x7fff5a00
+calling foo: n-i = 1770, &i = 0x7fff59e8
+calling foo: n-i = 1771, &i = 0x7fff59d0
+calling foo: n-i = 1772, &i = 0x7fff59b8
+calling foo: n-i = 1773, &i = 0x7fff59a0
+calling foo: n-i = 1774, &i = 0x7fff5988
+calling foo: n-i = 1775, &i = 0x7fff5970
+calling foo: n-i = 1776, &i = 0x7fff5958
+calling foo: n-i = 1777, &i = 0x7fff5940
+calling foo: n-i = 1778, &i = 0x7fff5928
+calling foo: n-i = 1779, &i = 0x7fff5910
+calling foo: n-i = 1780, &i = 0x7fff58f8
+calling foo: n-i = 1781, &i = 0x7fff58e0
+calling foo: n-i = 1782, &i = 0x7fff58c8
+calling foo: n-i = 1783, &i = 0x7fff58b0
+calling foo: n-i = 1784, &i = 0x7fff5898
+calling foo: n-i = 1785, &i = 0x7fff5880
+calling foo: n-i = 1786, &i = 0x7fff5868
+calling foo: n-i = 1787, &i = 0x7fff5850
+calling foo: n-i = 1788, &i = 0x7fff5838
+calling foo: n-i = 1789, &i = 0x7fff5820
+calling foo: n-i = 1790, &i = 0x7fff5808
+calling foo: n-i = 1791, &i = 0x7fff57f0
+calling foo: n-i = 1792, &i = 0x7fff57d8
+calling foo: n-i = 1793, &i = 0x7fff57c0
+calling foo: n-i = 1794, &i = 0x7fff57a8
+calling foo: n-i = 1795, &i = 0x7fff5790
+calling foo: n-i = 1796, &i = 0x7fff5778
+calling foo: n-i = 1797, &i = 0x7fff5760
+calling foo: n-i = 1798, &i = 0x7fff5748
+calling foo: n-i = 1799, &i = 0x7fff5730
+calling foo: n-i = 1800, &i = 0x7fff5718
+calling foo: n-i = 1801, &i = 0x7fff5700
+calling foo: n-i = 1802, &i = 0x7fff56e8
+calling foo: n-i = 1803, &i = 0x7fff56d0
+calling foo: n-i = 1804, &i = 0x7fff56b8
+calling foo: n-i = 1805, &i = 0x7fff56a0
+calling foo: n-i = 1806, &i = 0x7fff5688
+calling foo: n-i = 1807, &i = 0x7fff5670
+calling foo: n-i = 1808, &i = 0x7fff5658
+calling foo: n-i = 1809, &i = 0x7fff5640
+calling foo: n-i = 1810, &i = 0x7fff5628
+calling foo: n-i = 1811, &i = 0x7fff5610
+calling foo: n-i = 1812, &i = 0x7fff55f8
+calling foo: n-i = 1813, &i = 0x7fff55e0
+calling foo: n-i = 1814, &i = 0x7fff55c8
+calling foo: n-i = 1815, &i = 0x7fff55b0
+calling foo: n-i = 1816, &i = 0x7fff5598
+calling foo: n-i = 1817, &i = 0x7fff5580
+calling foo: n-i = 1818, &i = 0x7fff5568
+calling foo: n-i = 1819, &i = 0x7fff5550
+calling foo: n-i = 1820, &i = 0x7fff5538
+calling foo: n-i = 1821, &i = 0x7fff5520
+calling foo: n-i = 1822, &i = 0x7fff5508
+calling foo: n-i = 1823, &i = 0x7fff54f0
+calling foo: n-i = 1824, &i = 0x7fff54d8
+calling foo: n-i = 1825, &i = 0x7fff54c0
+calling foo: n-i = 1826, &i = 0x7fff54a8
+calling foo: n-i = 1827, &i = 0x7fff5490
+calling foo: n-i = 1828, &i = 0x7fff5478
+calling foo: n-i = 1829, &i = 0x7fff5460
+calling foo: n-i = 1830, &i = 0x7fff5448
+calling foo: n-i = 1831, &i = 0x7fff5430
+calling foo: n-i = 1832, &i = 0x7fff5418
+calling foo: n-i = 1833, &i = 0x7fff5400
+calling foo: n-i = 1834, &i = 0x7fff53e8
+calling foo: n-i = 1835, &i = 0x7fff53d0
+calling foo: n-i = 1836, &i = 0x7fff53b8
+calling foo: n-i = 1837, &i = 0x7fff53a0
+calling foo: n-i = 1838, &i = 0x7fff5388
+calling foo: n-i = 1839, &i = 0x7fff5370
+calling foo: n-i = 1840, &i = 0x7fff5358
+calling foo: n-i = 1841, &i = 0x7fff5340
+calling foo: n-i = 1842, &i = 0x7fff5328
+calling foo: n-i = 1843, &i = 0x7fff5310
+calling foo: n-i = 1844, &i = 0x7fff52f8
+calling foo: n-i = 1845, &i = 0x7fff52e0
+calling foo: n-i = 1846, &i = 0x7fff52c8
+calling foo: n-i = 1847, &i = 0x7fff52b0
+calling foo: n-i = 1848, &i = 0x7fff5298
+calling foo: n-i = 1849, &i = 0x7fff5280
+calling foo: n-i = 1850, &i = 0x7fff5268
+calling foo: n-i = 1851, &i = 0x7fff5250
+calling foo: n-i = 1852, &i = 0x7fff5238
+calling foo: n-i = 1853, &i = 0x7fff5220
+calling foo: n-i = 1854, &i = 0x7fff5208
+calling foo: n-i = 1855, &i = 0x7fff51f0
+calling foo: n-i = 1856, &i = 0x7fff51d8
+calling foo: n-i = 1857, &i = 0x7fff51c0
+calling foo: n-i = 1858, &i = 0x7fff51a8
+calling foo: n-i = 1859, &i = 0x7fff5190
+calling foo: n-i = 1860, &i = 0x7fff5178
+calling foo: n-i = 1861, &i = 0x7fff5160
+calling foo: n-i = 1862, &i = 0x7fff5148
+calling foo: n-i = 1863, &i = 0x7fff5130
+calling foo: n-i = 1864, &i = 0x7fff5118
+calling foo: n-i = 1865, &i = 0x7fff5100
+calling foo: n-i = 1866, &i = 0x7fff50e8
+calling foo: n-i = 1867, &i = 0x7fff50d0
+calling foo: n-i = 1868, &i = 0x7fff50b8
+calling foo: n-i = 1869, &i = 0x7fff50a0
+calling foo: n-i = 1870, &i = 0x7fff5088
+calling foo: n-i = 1871, &i = 0x7fff5070
+calling foo: n-i = 1872, &i = 0x7fff5058
+calling foo: n-i = 1873, &i = 0x7fff5040
+calling foo: n-i = 1874, &i = 0x7fff5028
+calling foo: n-i = 1875, &i = 0x7fff5010
+calling foo: n-i = 1876, &i = 0x7fff4ff8
+calling foo: n-i = 1877, &i = 0x7fff4fe0
+calling foo: n-i = 1878, &i = 0x7fff4fc8
+calling foo: n-i = 1879, &i = 0x7fff4fb0
+calling foo: n-i = 1880, &i = 0x7fff4f98
+calling foo: n-i = 1881, &i = 0x7fff4f80
+calling foo: n-i = 1882, &i = 0x7fff4f68
+calling foo: n-i = 1883, &i = 0x7fff4f50
+calling foo: n-i = 1884, &i = 0x7fff4f38
+calling foo: n-i = 1885, &i = 0x7fff4f20
+calling foo: n-i = 1886, &i = 0x7fff4f08
+calling foo: n-i = 1887, &i = 0x7fff4ef0
+calling foo: n-i = 1888, &i = 0x7fff4ed8
+calling foo: n-i = 1889, &i = 0x7fff4ec0
+calling foo: n-i = 1890, &i = 0x7fff4ea8
+calling foo: n-i = 1891, &i = 0x7fff4e90
+calling foo: n-i = 1892, &i = 0x7fff4e78
+calling foo: n-i = 1893, &i = 0x7fff4e60
+calling foo: n-i = 1894, &i = 0x7fff4e48
+calling foo: n-i = 1895, &i = 0x7fff4e30
+calling foo: n-i = 1896, &i = 0x7fff4e18
+calling foo: n-i = 1897, &i = 0x7fff4e00
+calling foo: n-i = 1898, &i = 0x7fff4de8
+calling foo: n-i = 1899, &i = 0x7fff4dd0
+calling foo: n-i = 1900, &i = 0x7fff4db8
+calling foo: n-i = 1901, &i = 0x7fff4da0
+calling foo: n-i = 1902, &i = 0x7fff4d88
+calling foo: n-i = 1903, &i = 0x7fff4d70
+calling foo: n-i = 1904, &i = 0x7fff4d58
+calling foo: n-i = 1905, &i = 0x7fff4d40
+calling foo: n-i = 1906, &i = 0x7fff4d28
+calling foo: n-i = 1907, &i = 0x7fff4d10
+calling foo: n-i = 1908, &i = 0x7fff4cf8
+calling foo: n-i = 1909, &i = 0x7fff4ce0
+calling foo: n-i = 1910, &i = 0x7fff4cc8
+calling foo: n-i = 1911, &i = 0x7fff4cb0
+calling foo: n-i = 1912, &i = 0x7fff4c98
+calling foo: n-i = 1913, &i = 0x7fff4c80
+calling foo: n-i = 1914, &i = 0x7fff4c68
+calling foo: n-i = 1915, &i = 0x7fff4c50
+calling foo: n-i = 1916, &i = 0x7fff4c38
+calling foo: n-i = 1917, &i = 0x7fff4c20
+calling foo: n-i = 1918, &i = 0x7fff4c08
+calling foo: n-i = 1919, &i = 0x7fff4bf0
+calling foo: n-i = 1920, &i = 0x7fff4bd8
+calling foo: n-i = 1921, &i = 0x7fff4bc0
+calling foo: n-i = 1922, &i = 0x7fff4ba8
+calling foo: n-i = 1923, &i = 0x7fff4b90
+calling foo: n-i = 1924, &i = 0x7fff4b78
+calling foo: n-i = 1925, &i = 0x7fff4b60
+calling foo: n-i = 1926, &i = 0x7fff4b48
+calling foo: n-i = 1927, &i = 0x7fff4b30
+calling foo: n-i = 1928, &i = 0x7fff4b18
+calling foo: n-i = 1929, &i = 0x7fff4b00
+calling foo: n-i = 1930, &i = 0x7fff4ae8
+calling foo: n-i = 1931, &i = 0x7fff4ad0
+calling foo: n-i = 1932, &i = 0x7fff4ab8
+calling foo: n-i = 1933, &i = 0x7fff4aa0
+calling foo: n-i = 1934, &i = 0x7fff4a88
+calling foo: n-i = 1935, &i = 0x7fff4a70
+calling foo: n-i = 1936, &i = 0x7fff4a58
+calling foo: n-i = 1937, &i = 0x7fff4a40
+calling foo: n-i = 1938, &i = 0x7fff4a28
+calling foo: n-i = 1939, &i = 0x7fff4a10
+calling foo: n-i = 1940, &i = 0x7fff49f8
+calling foo: n-i = 1941, &i = 0x7fff49e0
+calling foo: n-i = 1942, &i = 0x7fff49c8
+calling foo: n-i = 1943, &i = 0x7fff49b0
+calling foo: n-i = 1944, &i = 0x7fff4998
+calling foo: n-i = 1945, &i = 0x7fff4980
+calling foo: n-i = 1946, &i = 0x7fff4968
+calling foo: n-i = 1947, &i = 0x7fff4950
+calling foo: n-i = 1948, &i = 0x7fff4938
+calling foo: n-i = 1949, &i = 0x7fff4920
+calling foo: n-i = 1950, &i = 0x7fff4908
+calling foo: n-i = 1951, &i = 0x7fff48f0
+calling foo: n-i = 1952, &i = 0x7fff48d8
+calling foo: n-i = 1953, &i = 0x7fff48c0
+calling foo: n-i = 1954, &i = 0x7fff48a8
+calling foo: n-i = 1955, &i = 0x7fff4890
+calling foo: n-i = 1956, &i = 0x7fff4878
+calling foo: n-i = 1957, &i = 0x7fff4860
+calling foo: n-i = 1958, &i = 0x7fff4848
+calling foo: n-i = 1959, &i = 0x7fff4830
+calling foo: n-i = 1960, &i = 0x7fff4818
+calling foo: n-i = 1961, &i = 0x7fff4800
+calling foo: n-i = 1962, &i = 0x7fff47e8
+calling foo: n-i = 1963, &i = 0x7fff47d0
+calling foo: n-i = 1964, &i = 0x7fff47b8
+calling foo: n-i = 1965, &i = 0x7fff47a0
+calling foo: n-i = 1966, &i = 0x7fff4788
+calling foo: n-i = 1967, &i = 0x7fff4770
+calling foo: n-i = 1968, &i = 0x7fff4758
+calling foo: n-i = 1969, &i = 0x7fff4740
+calling foo: n-i = 1970, &i = 0x7fff4728
+calling foo: n-i = 1971, &i = 0x7fff4710
+calling foo: n-i = 1972, &i = 0x7fff46f8
+calling foo: n-i = 1973, &i = 0x7fff46e0
+calling foo: n-i = 1974, &i = 0x7fff46c8
+calling foo: n-i = 1975, &i = 0x7fff46b0
+calling foo: n-i = 1976, &i = 0x7fff4698
+calling foo: n-i = 1977, &i = 0x7fff4680
+calling foo: n-i = 1978, &i = 0x7fff4668
+calling foo: n-i = 1979, &i = 0x7fff4650
+calling foo: n-i = 1980, &i = 0x7fff4638
+calling foo: n-i = 1981, &i = 0x7fff4620
+calling foo: n-i = 1982, &i = 0x7fff4608
+calling foo: n-i = 1983, &i = 0x7fff45f0
+calling foo: n-i = 1984, &i = 0x7fff45d8
+calling foo: n-i = 1985, &i = 0x7fff45c0
+calling foo: n-i = 1986, &i = 0x7fff45a8
+calling foo: n-i = 1987, &i = 0x7fff4590
+calling foo: n-i = 1988, &i = 0x7fff4578
+calling foo: n-i = 1989, &i = 0x7fff4560
+calling foo: n-i = 1990, &i = 0x7fff4548
+calling foo: n-i = 1991, &i = 0x7fff4530
+calling foo: n-i = 1992, &i = 0x7fff4518
+calling foo: n-i = 1993, &i = 0x7fff4500
+calling foo: n-i = 1994, &i = 0x7fff44e8
+calling foo: n-i = 1995, &i = 0x7fff44d0
+calling foo: n-i = 1996, &i = 0x7fff44b8
+calling foo: n-i = 1997, &i = 0x7fff44a0
+calling foo: n-i = 1998, &i = 0x7fff4488
+calling foo: n-i = 1999, &i = 0x7fff4470
+calling foo: n-i = 2000, &i = 0x7fff4458
+calling foo: n-i = 2001, &i = 0x7fff4440
+calling foo: n-i = 2002, &i = 0x7fff4428
+calling foo: n-i = 2003, &i = 0x7fff4410
+calling foo: n-i = 2004, &i = 0x7fff43f8
+calling foo: n-i = 2005, &i = 0x7fff43e0
+calling foo: n-i = 2006, &i = 0x7fff43c8
+calling foo: n-i = 2007, &i = 0x7fff43b0
+calling foo: n-i = 2008, &i = 0x7fff4398
+calling foo: n-i = 2009, &i = 0x7fff4380
+calling foo: n-i = 2010, &i = 0x7fff4368
+calling foo: n-i = 2011, &i = 0x7fff4350
+calling foo: n-i = 2012, &i = 0x7fff4338
+calling foo: n-i = 2013, &i = 0x7fff4320
+calling foo: n-i = 2014, &i = 0x7fff4308
+calling foo: n-i = 2015, &i = 0x7fff42f0
+calling foo: n-i = 2016, &i = 0x7fff42d8
+calling foo: n-i = 2017, &i = 0x7fff42c0
+calling foo: n-i = 2018, &i = 0x7fff42a8
+calling foo: n-i = 2019, &i = 0x7fff4290
+calling foo: n-i = 2020, &i = 0x7fff4278
+calling foo: n-i = 2021, &i = 0x7fff4260
+calling foo: n-i = 2022, &i = 0x7fff4248
+calling foo: n-i = 2023, &i = 0x7fff4230
+calling foo: n-i = 2024, &i = 0x7fff4218
+calling foo: n-i = 2025, &i = 0x7fff4200
+calling foo: n-i = 2026, &i = 0x7fff41e8
+calling foo: n-i = 2027, &i = 0x7fff41d0
+calling foo: n-i = 2028, &i = 0x7fff41b8
+calling foo: n-i = 2029, &i = 0x7fff41a0
+calling foo: n-i = 2030, &i = 0x7fff4188
+calling foo: n-i = Fatal user mode trap 3 (TLB miss on store, epc 0x40041c, vaddr 0x7fff3ff8)
+Operation took 12.774754360 seconds
+O
+=== asst4-03-stacktest.py ===
+=== asst4-04-malloctest.py ===
+sys161: System/161 release 1.14, compiled Jan 13 2015 13:55:47
+
+OS/161 base system version 1.11a
+Copyright (c) 2000, 2001, 2002, 2003
+   President and Fellows of Harvard College.  All rights reserved.
+
+My really little pony's system version 0 (ASST4 #5)
+
+Cpu is MIPS r2000/r3000
+332k physical memory available
+Device probe...
+lamebus0 (system main bus)
+emu0 at lamebus0
+ltrace0 at lamebus0
+ltimer0 at lamebus0
+hardclock on ltimer0 (100 hz)
+beep0 at ltimer0
+rtclock0 at ltimer0
+lrandom0 at lamebus0
+random0 at lrandom0
+lhd0 at lamebus0
+lhd1 at lamebus0
+lser0 at lamebus0
+con0 at lser0
+pseudorand0 (virtual)
+
+OS/161 kernel [? for menu]:p testbin/os161testerprog 1
+ p testbin/os161testerprog 1
+*** Malloc test 1 ***
+Allocating 16384 bytes
+Unknown syscall 10
+testbin/os161testerprog: malloc: initial sbrk failed: No such system call
+Operation took 0.088648800 seconds
+OS/161 kernel [? for menu]: p testbin/os161testerprog 2
+p testbin/os161testerprog 2
+Entering malloc test 2.
+Make sure you read and understand the comment in malloctest.c that
+explains the conditions this test assumes.
+
+Testing how much memory we can allocate:
+Unknown syscall 10
+testbin/os161testerprog: malloc: initial sbrk failed: No such system call
+Operation took 0.108365520 seconds
+OS/161 kernel [? for menu]: p testbin/os161testerprog 5
+p testbin/os161testerprog 5
+Beginning malloc test 5
+Seeded random number generator with 0.
+Unknown syscall 10
+testbin/os161testerprog: malloc: initial sbrk failed: No such system call
+Operation took 0.091802320 seconds
+
+=== asst4-04-malloctest.py ===
+=== asst4-05-btree.py ===
+sys161: System/161 release 1.14, compiled Jan 13 2015 13:55:47
+
+OS/161 base system version 1.11a
+Copyright (c) 2000, 2001, 2002, 2003
+   President and Fellows of Harvard College.  All rights reserved.
+
+My really little pony's system version 0 (ASST4 #5)
+
+Cpu is MIPS r2000/r3000
+332k physical memory available
+Device probe...
+lamebus0 (system main bus)
+emu0 at lamebus0
+ltrace0 at lamebus0
+ltimer0 at lamebus0
+hardclock on ltimer0 (100 hz)
+beep0 at ltimer0
+rtclock0 at ltimer0
+lrandom0 at lamebus0
+random0 at lrandom0
+lhd0 at lamebus0
+lhd1 at lamebus0
+lser0 at lamebus0
+con0 at lser0
+pseudorand0 (virtual)
+
+OS/161 kernel [? for menu]:p testbin/os161testerprog 
+ p testbin/os161testerprog 
+Fatal user mode trap 3 (TLB miss on store, epc 0x4001ac, vaddr 0x7ebfffb4)
+Operation took 0.076450760 seconds
+OS/161 kernel [? for menu]: p testbin/os161testerprog -h
+p testbin/os161testerprog -h
+Unknown syscall 10
+testbin/os161testerprog: malloc: initial sbrk failed: No such system call
+Operation took 0.079542120 seconds
+
+=== asst4-05-btree.py ===
+=== asst4-06-bigprog.py ===
+sys161: System/161 release 1.14, compiled Jan 13 2015 13:55:47
+
+OS/161 base system version 1.11a
+Copyright (c) 2000, 2001, 2002, 2003
+   President and Fellows of Harvard College.  All rights reserved.
+
+My really little pony's system version 0 (ASST4 #5)
+
+Cpu is MIPS r2000/r3000
+332k physical memory available
+Device probe...
+lamebus0 (system main bus)
+emu0 at lamebus0
+ltrace0 at lamebus0
+ltimer0 at lamebus0
+hardclock on ltimer0 (100 hz)
+beep0 at ltimer0
+rtclock0 at ltimer0
+lrandom0 at lamebus0
+random0 at lrandom0
+lhd0 at lamebus0
+lhd1 at lamebus0
+lser0 at lamebus0
+con0 at lser0
+pseudorand0 (virtual)
+
+OS/161 kernel [? for menu]: p testbin/os161testerprog 
+p testbin/os161testerprog 
+Running program testbin/os161testerprog failed: Out of memory
+Operation took 0.044662520 seconds
+O
+=== asst4-06-bigprog.py ===
+=== asst4-07-sty.py ===
+sys161: System/161 release 1.14, compiled Jan 13 2015 13:55:47
+
+OS/161 base system version 1.11a
+Copyright (c) 2000, 2001, 2002, 2003
+   President and Fellows of Harvard College.  All rights reserved.
+
+My really little pony's system version 0 (ASST4 #5)
+
+Cpu is MIPS r2000/r3000
+332k physical memory available
+Device probe...
+lamebus0 (system main bus)
+emu0 at lamebus0
+ltrace0 at lamebus0
+ltimer0 at lamebus0
+hardclock on ltimer0 (100 hz)
+beep0 at ltimer0
+rtclock0 at ltimer0
+lrandom0 at lamebus0
+random0 at lrandom0
+lhd0 at lamebus0
+lhd1 at lamebus0
+lser0 at lamebus0
+con0 at lser0
+pseudorand0 (virtual)
+
+OS/161 kernel [? for menu]: p testbin/os161testerprog 6
+p testbin/os161testerprog 6
+sleep: Dropping thread <boot/menu>
+sleep: Dropping thread testbin/os161testerprog
+sleep: Dropping thread User Thread Fork
+sleep: Dropping thread User Thread Fork
+scheduler: Dropping thread User Thread Fork.
+scheduler: Dropping thread User Thread Fork.
+scheduler: Dropping thread User Thread Fork.
+panic: Assertion failed: (as->as_vbase1 & PAGE_FRAME) == as->as_vbase1, at ../../vm/addrspace.c:108 (vm_fault)
+sys161: 40500683 cycles (4297803k, 456u, 36202424i)
+sys161: 770 irqs 36 exns 0r/0w disk 28r/1008w console 12r/0w/4m emufs 0r/0w net
+sys161: Elapsed real time: 1.579275 seconds (25.6451 mhz)
+sys161: Elapsed virtual time: 1.620027320 seconds (25 mhz)
+
+=== asst4-07-sty.py ===
+=== asst4-08-forktest.py ===
+sys161: System/161 release 1.14, compiled Jan 13 2015 13:55:47
+
+OS/161 base system version 1.11a
+Copyright (c) 2000, 2001, 2002, 2003
+   President and Fellows of Harvard College.  All rights reserved.
+
+My really little pony's system version 0 (ASST4 #5)
+
+Cpu is MIPS r2000/r3000
+332k physical memory available
+Device probe...
+lamebus0 (system main bus)
+emu0 at lamebus0
+ltrace0 at lamebus0
+ltimer0 at lamebus0
+hardclock on ltimer0 (100 hz)
+beep0 at ltimer0
+rtclock0 at ltimer0
+lrandom0 at lamebus0
+random0 at lrandom0
+lhd0 at lamebus0
+lhd1 at lamebus0
+lser0 at lamebus0
+con0 at lser0
+pseudorand0 (virtual)
+
+OS/161 kernel [? for menu]: p testbin/os161testerprog 
+p testbin/os161testerprog 
+(program name unknown): Starting Fork Test.
+0011112222sleep: Dropping thread <boot/menu>
+scheduler: Dropping thread User Thread Fork.
+scheduler: Dropping thread User Thread Fork.
+scheduler: Dropping thread User Thread Fork.
+scheduler: Dropping thread User Thread Fork.
+scheduler: Dropping thread testbin/os161testerprog.
+scheduler: Dropping thread User Thread Fork.
+scheduler: Dropping thread User Thread Fork.
+panic: Assertion failed: (as->as_vbase1 & PAGE_FRAME) == as->as_vbase1, at ../../vm/addrspace.c:108 (vm_fault)
+sys161: 41930560 cycles (6978260k, 113206u, 34839094i)
+sys161: 824 irqs 6265 exns 0r/0w disk 27r/1121w console 8r/0w/3m emufs 0r/0w net
+sys161: Elapsed real time: 1.570786 seconds (26.694 mhz)
+sys161: Elapsed virtual time: 1.677222400 seconds (25 mhz)
+
+=== asst4-08-forktest.py ===
+=== asst4-09-facts.py ===
+sys161: System/161 release 1.14, compiled Jan 13 2015 13:55:47
+
+OS/161 base system version 1.11a
+Copyright (c) 2000, 2001, 2002, 2003
+   President and Fellows of Harvard College.  All rights reserved.
+
+My really little pony's system version 0 (ASST4 #5)
+
+Cpu is MIPS r2000/r3000
+332k physical memory available
+Device probe...
+lamebus0 (system main bus)
+emu0 at lamebus0
+ltrace0 at lamebus0
+ltimer0 at lamebus0
+hardclock on ltimer0 (100 hz)
+beep0 at ltimer0
+rtclock0 at ltimer0
+lrandom0 at lamebus0
+random0 at lrandom0
+lhd0 at lamebus0
+lhd1 at lamebus0
+lser0 at lamebus0
+con0 at lser0
+pseudorand0 (virtual)
+
+OS/161 kernel [? for menu]:p testbin/os161testerprog 
+ p testbin/os161testerprog 
+12! +11! +10! +9! +8! +7! +6! +5! +4! sleep: Dropping thread <boot/menu>
+sleep: Dropping thread User Thread Fork
+sleep: Dropping thread User Thread Fork
+scheduler: Dropping thread User Thread Fork.
+scheduler: Dropping thread User Thread Fork.
+scheduler: Dropping thread User Thread Fork.
+scheduler: Dropping thread User Thread Fork.
+scheduler: Dropping thread testbin/os161testerprog.
+panic: Assertion failed: (as->as_vbase1 & PAGE_FRAME) == as->as_vbase1, at ../../vm/addrspace.c:108 (vm_fault)
+sys161: 39646509 cycles (4689401k, 8088u, 34949020i)
+sys161: 804 irqs 82 exns 0r/0w disk 27r/1095w console 13r/0w/4m emufs 0r/0w net
+sys161: Elapsed real time: 1.536824 seconds (25.7977 mhz)
+sys161: Elapsed virtual time: 1.585860360 seconds (25 mhz)
+
+=== asst4-09-facts.py ===
+=== asst4-10-hasher.py ===
+sys161: System/161 release 1.14, compiled Jan 13 2015 13:55:47
+
+OS/161 base system version 1.11a
+Copyright (c) 2000, 2001, 2002, 2003
+   President and Fellows of Harvard College.  All rights reserved.
+
+My really little pony's system version 0 (ASST4 #5)
+
+Cpu is MIPS r2000/r3000
+332k physical memory available
+Device probe...
+lamebus0 (system main bus)
+emu0 at lamebus0
+ltrace0 at lamebus0
+ltimer0 at lamebus0
+hardclock on ltimer0 (100 hz)
+beep0 at ltimer0
+rtclock0 at ltimer0
+lrandom0 at lamebus0
+random0 at lrandom0
+lhd0 at lamebus0
+lhd1 at lamebus0
+lser0 at lamebus0
+con0 at lser0
+pseudorand0 (virtual)
+
+OS/161 kernel [? for menu]:p testbin/os161testerprog 8 1
+ p testbin/os161testerprog 8 1
+hasher: spawning 8 child process(es)
+hsleep: Dropping thread <boot/menu>
+scheduler: Dropping thread User Thread Fork.
+scheduler: Dropping thread testbin/os161testerprog.
+scheduler: Dropping thread User Thread Fork.
+panic: Assertion failed: as->as_pbase1 != 0, at ../../vm/addrspace.c:102 (vm_fault)
+sys161: 46002264 cycles (5280105k, 2031358u, 38690801i)
+sys161: 829 irqs 108 exns 0r/0w disk 30r/901w console 9r/0w/3m emufs 0r/0w net
+sys161: Elapsed real time: 1.811710 seconds (25.3916 mhz)
+sys161: Elapsed virtual time: 1.840090560 seconds (25 mhz)
+
+=== asst4-10-hasher.py ===
+=== asst4-11-matmult.py ===
+sys161: System/161 release 1.14, compiled Jan 13 2015 13:55:47
+
+OS/161 base system version 1.11a
+Copyright (c) 2000, 2001, 2002, 2003
+   President and Fellows of Harvard College.  All rights reserved.
+
+My really little pony's system version 0 (ASST4 #5)
+
+Cpu is MIPS r2000/r3000
+332k physical memory available
+Device probe...
+lamebus0 (system main bus)
+emu0 at lamebus0
+ltrace0 at lamebus0
+ltimer0 at lamebus0
+hardclock on ltimer0 (100 hz)
+beep0 at ltimer0
+rtclock0 at ltimer0
+lrandom0 at lamebus0
+random0 at lrandom0
+lhd0 at lamebus0
+lhd1 at lamebus0
+lser0 at lamebus0
+con0 at lser0
+pseudorand0 (virtual)
+
+OS/161 kernel [? for menu]:p testbin/os161testerprog 
+ p testbin/os161testerprog 
+Running program testbin/os161testerprog failed: Out of memory
+Operation took 0.044701800 seconds
+O
+=== asst4-11-matmult.py ===
+=== asst4-12-huge.py ===
+sys161: System/161 release 1.14, compiled Jan 13 2015 13:55:47
+
+OS/161 base system version 1.11a
+Copyright (c) 2000, 2001, 2002, 2003
+   President and Fellows of Harvard College.  All rights reserved.
+
+My really little pony's system version 0 (ASST4 #5)
+
+Cpu is MIPS r2000/r3000
+332k physical memory available
+Device probe...
+lamebus0 (system main bus)
+emu0 at lamebus0
+ltrace0 at lamebus0
+ltimer0 at lamebus0
+hardclock on ltimer0 (100 hz)
+beep0 at ltimer0
+rtclock0 at ltimer0
+lrandom0 at lamebus0
+random0 at lrandom0
+lhd0 at lamebus0
+lhd1 at lamebus0
+lser0 at lamebus0
+con0 at lser0
+pseudorand0 (virtual)
+
+OS/161 kernel [? for menu]: p testbin/os161testerprog 
+p testbin/os161testerprog 
+Running program testbin/os161testerprog failed: Out of memory
+Operation took 0.044598320 seconds
+
+=== asst4-12-huge.py ===
+=== asst4-13-triplemat.py ===
+sys161: System/161 release 1.14, compiled Jan 13 2015 13:55:47
+
+OS/161 base system version 1.11a
+Copyright (c) 2000, 2001, 2002, 2003
+   President and Fellows of Harvard College.  All rights reserved.
+
+My really little pony's system version 0 (ASST4 #5)
+
+Cpu is MIPS r2000/r3000
+332k physical memory available
+Device probe...
+lamebus0 (system main bus)
+emu0 at lamebus0
+ltrace0 at lamebus0
+ltimer0 at lamebus0
+hardclock on ltimer0 (100 hz)
+beep0 at ltimer0
+rtclock0 at ltimer0
+lrandom0 at lamebus0
+random0 at lrandom0
+lhd0 at lamebus0
+lhd1 at lamebus0
+lser0 at lamebus0
+con0 at lser0
+pseudorand0 (virtual)
+
+OS/161 kernel [? for menu]: p testbin/os161testerprog 
+p testbin/os161testerprog 
+(program name unknown): Starting: running three copies of /testbin/matmult...
+sleep: Dropping thread <boot/menu>
+sleep: Dropping thread testbin/os161testerprog
+scheduler: Dropping thread User Thread Fork.
+scheduler: Dropping thread User Thread Fork.
+panic: Assertion failed: as->as_pbase2 != 0, at ../../vm/addrspace.c:105 (vm_fault)
+sys161: 39866334 cycles (4456028k, 3615u, 35406691i)
+sys161: 845 irqs 84 exns 0r/0w disk 27r/933w console 12r/0w/5m emufs 0r/0w net
+sys161: Elapsed real time: 1.581209 seconds (25.2126 mhz)
+sys161: Elapsed virtual time: 1.594653360 seconds (25 mhz)
+
+=== asst4-13-triplemat.py ===
+=== asst4-14-parallelvm.py ===
+sys161: System/161 release 1.14, compiled Jan 13 2015 13:55:47
+
+OS/161 base system version 1.11a
+Copyright (c) 2000, 2001, 2002, 2003
+   President and Fellows of Harvard College.  All rights reserved.
+
+My really little pony's system version 0 (ASST4 #5)
+
+Cpu is MIPS r2000/r3000
+332k physical memory available
+Device probe...
+lamebus0 (system main bus)
+emu0 at lamebus0
+ltrace0 at lamebus0
+ltimer0 at lamebus0
+hardclock on ltimer0 (100 hz)
+beep0 at ltimer0
+rtclock0 at ltimer0
+lrandom0 at lamebus0
+random0 at lrandom0
+lhd0 at lamebus0
+lhd1 at lamebus0
+lser0 at lamebus0
+con0 at lser0
+pseudorand0 (virtual)
+
+OS/161 kernel [? for menu]: p testbin/os161testerprog 18
+p testbin/os161testerprog 18
+Job size approximately 58800 bytes
+Forking 18 jobs; total load 1033k
+Psleep: Dropping thread <boot/menu>
+scheduler: Dropping thread testbin/os161testerprog.
+scheduler: Dropping thread User Thread Fork.
+panic: Assertion failed: as->as_pbase1 != 0, at ../../vm/addrspace.c:102 (vm_fault)
+sys161: 42692106 cycles (5348484k, 12654u, 37330968i)
+sys161: 847 irqs 115 exns 0r/0w disk 29r/887w console 8r/0w/3m emufs 0r/0w net
+sys161: Elapsed real time: 1.707090 seconds (25.0087 mhz)
+sys161: Elapsed virtual time: 1.707684240 seconds (25 mhz)
+sys161: System/161 release 1.14, compiled Jan 13 2015 13:55:47
+
+OS/161 base system version 1.11a
+Copyright (c) 2000, 2001, 2002, 2003
+   President and Fellows of Harvard College.  All rights reserved.
+
+My really little pony's system version 0 (ASST4 #5)
+
+Cpu is MIPS r2000/r3000
+332k physical memory available
+Device probe...
+lamebus0 (system main bus)
+emu0 at lamebus0
+ltrace0 at lamebus0
+ltimer0 at lamebus0
+hardclock on ltimer0 (100 hz)
+beep0 at ltimer0
+rtclock0 at ltimer0
+lrandom0 at lamebus0
+random0 at lrandom0
+lhd0 at lamebus0
+lhd1 at lamebus0
+lser0 at lamebus0
+con0 at lser0
+pseudorand0 (virtual)
+
+OS/161 kernel [? for menu]: p testbin/os161testerprog 18
+p testbin/os161testerprog 18
+Job size approximately 58800 bytes
+Forking 18 jobs; total load 1033k
+Psleep: Dropping thread <boot/menu>
+scheduler: Dropping thread testbin/os161testerprog.
+scheduler: Dropping thread User Thread Fork.
+panic: Assertion failed: as->as_pbase1 != 0, at ../../vm/addrspace.c:102 (vm_fault)
+sys161: 42713404 cycles (5351415k, 12676u, 37349313i)
+sys161: 843 irqs 116 exns 0r/0w disk 29r/887w console 8r/0w/3m emufs 0r/0w net
+sys161: Elapsed real time: 1.707191 seconds (25.0197 mhz)
+sys161: Elapsed virtual time: 1.708536160 seconds (25 mhz)
+sys161: System/161 release 1.14, compiled Jan 13 2015 13:55:47
+
+OS/161 base system version 1.11a
+Copyright (c) 2000, 2001, 2002, 2003
+   President and Fellows of Harvard College.  All rights reserved.
+
+My really little pony's system version 0 (ASST4 #5)
+
+Cpu is MIPS r2000/r3000
+1868k physical memory available
+Device probe...
+lamebus0 (system main bus)
+emu0 at lamebus0
+ltrace0 at lamebus0
+ltimer0 at lamebus0
+hardclock on ltimer0 (100 hz)
+beep0 at ltimer0
+rtclock0 at ltimer0
+lrandom0 at lamebus0
+random0 at lrandom0
+lhd0 at lamebus0
+lhd1 at lamebus0
+lser0 at lamebus0
+con0 at lser0
+pseudorand0 (virtual)
+
+OS/161 kernel [? for menu]: p testbin/os161testerprog 18
+p testbin/os161testerprog 18
+Job size approximately 58800 bytes
+Forking 18 jobs; total load 1033k
+ProcPess P0 (PpidP 3)P staPrtiPng cPompPutatPionP...
+rPoctePsleep: Dropping thread <boot/menu>
+scheduler: Dropping thread testbin/os161testerprog.
+scheduler: Dropping thread User Thread Fork.
+scheduler: Dropping thread User Thread Fork.
+scheduler: Dropping thread User Thread Fork.
+scheduler: Dropping thread User Thread Fork.
+scheduler: Dropping thread User Thread Fork.
+scheduler: Dropping thread User Thread Fork.
+scheduler: Dropping thread User Thread Fork.
+scheduler: Dropping thread User Thread Fork.
+scheduler: Dropping thread User Thread Fork.
+scheduler: Dropping thread User Thread Fork.
+scheduler: Dropping thread User Thread Fork.
+scheduler: Dropping thread User Thread Fork.
+scheduler: Dropping thread User Thread Fork.
+scheduler: Dropping thread User Thread Fork.
+panic: Assertion failed: as->as_pbase1 != 0, at ../../vm/addrspace.c:102 (vm_fault)
+sys161: 55351916 cycles (17004246k, 794031u, 37553639i)
+sys161: 951 irqs 233 exns 0r/0w disk 29r/1532w console 8r/0w/3m emufs 0r/0w net
+sys161: Elapsed real time: 1.907080 seconds (29.0244 mhz)
+sys161: Elapsed virtual time: 2.214076640 seconds (25 mhz)
+
+=== asst4-14-parallelvm.py ===
